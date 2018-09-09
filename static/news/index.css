@@ -29,6 +29,8 @@ a:hover{
     height: 65px;
     background: #2f3440;
     box-shadow: 0 2px 13px 5px rgba(0, 0, 0, 0.02);
+    position: fixed;
+    z-index: 99;
 }
 
 .nav{
@@ -104,7 +106,7 @@ a:hover{
     width: 1170px;
     margin: 0 auto;
     overflow: hidden;
-    margin-top: 20px;
+    padding-top: 85px;
 }
 
 .main .main-container{
