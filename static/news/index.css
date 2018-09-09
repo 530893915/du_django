@@ -82,3 +82,29 @@ a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, bo
     font-size: 30px;
     margin-right: 5px;
 }
+
+.main{
+    width: 1170px;
+    margin: 0 auto;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.main .main-container{
+    float: left;
+    width: 795px;
+    background: pink;
+    height: 600px;
+}
+
+.main .sidebar-container{
+    float: right;
+    width: 355px;
+    background: seagreen;
+    height: 200px;
+}
+
+.main-container .banner{
+    width:100%;
+    overflow: hidden;
+}
