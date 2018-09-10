@@ -1,23 +1,65 @@
-.author-group{
+.kong-group{
     width: 400px;
     margin: 0 auto;
-    margin-top: 40px;
-    background: #ffffff;
+    padding-top: 195px;
 }
 
-.author-group .top-group{
+.main-auth-group{
+    width: 400px;
+    margin: 0 auto;
+    margin-top: 105px;
+    background: #ffffff;
+    padding: 20px 30px 10px 30px;
+    box-shadow: 0 2px 13px 5px rgba(0, 0, 0, 0.2);
+}
+
+.main-auth-group .top-group{
     width: 100%;
     overflow: hidden;
     border-bottom: 1px solid #eeeeee;
     font-size: 22px;
+    margin-bottom: 10px;
 }
 
 .top-group .title{
     float: left;
     border-bottom: 3px solid #5b86db;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
 }
 
 .top-group .more-link{
     color: #5b86db;
+    float: right;
+}
+
+.main-auth-group .input-group{
+    width: 100%;
+    height: 40px;
+    margin-bottom: 10px;
+}
+
+.main-auth-group .input-group .form-control{
+    width: 100%;
+    height: 100%;
+    border:#ccc 1px solid;
+    padding: 10px;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.main-auth-group .input-group .forget-pwd{
+    float: right;
+    color: #696969;
+    font-size: 14px;
+}
+
+.main-auth-group .submit-btn{
+    width: 100%;
+    height: 40px;
+    background: #5b86db;
+    border:none;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 25px;
+    box-shadow: 0 2px 13px 5px rgba(0, 0, 0, 0.02);
 }
