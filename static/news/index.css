@@ -7,9 +7,33 @@ a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, bo
     text-decoration: none;
 }
 
+/*视频背景*/
+.abc{
+    float: left;
+    margin-top: -27px;
+    position: fixed;
+    width: 100%;
+    height:auto;
+    z-index: -99;
+    opacity: 0.5;
+    filter: blur(7px);
+}
+
+canvas{
+    background-color: #f2f2f2;
+    display: block;
+    margin: 0 auto;
+    position: fixed;
+    z-index: -98;
+    opacity: 0.7;
+    -webkit-filter:blur(3px) sepia(5%);
+    filter:blur(3px) sepia(5%);
+}
+/*---------------*/
+
 html{
     /*background-color:#f2f2f2;*/
-    background: url("/static/news/images/bg1.jpg") no-repeat center;
+    background: url("/static/news/images/bg.jpg") no-repeat center;
     filter:"progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod='scale')";
     -moz-background-size:100% 100%;
     background-size:100% 100%;
@@ -107,7 +131,9 @@ a:hover{
     margin: 0 auto;
     overflow: hidden;
     padding-top: 85px;
+    transition: all 0.75s ease;
 }
+
 
 .main .main-container{
     float: left;
@@ -119,14 +145,16 @@ a:hover{
 .main .sidebar-container{
     float: right;
     width: 355px;
-    background: seagreen;
-    height: 200px;
+    background: #bababa;
+    height: 1000px;
+    box-shadow: 0 2px 13px 5px rgba(0, 0, 0, 0.02);
 }
 
 .main-container .banner{
     width:100%;
     overflow: hidden;
 }
+
 
 .carousel-inner{
     box-shadow: 0 2px 13px 5px rgba(0, 0, 0, 0.02);
@@ -154,11 +182,12 @@ a:hover{
     padding-right: 10px;
     line-height: 66px;
     font-size: 16px;
-
+    transition: all 0.5s ease;
 }
 
 .list-tab-group li a{
     color: #878787;
+    transition: all 0.25s ease;
 }
 
 .list-tab-group li a:hover{
@@ -176,13 +205,11 @@ a:hover{
     background: rgba(184, 255, 184, 0.28);
     border:none;
     box-shadow: 0 2px 13px 5px rgba(0, 0, 0, 0.02);
-    transition: all 0.5s ease;
 }
 
 .list-tab-group li:hover a{
     color: #000;
     font-size: 30px;
-    transition: all 0.25s ease;
 }
 
 /*---------新闻列表---------*/
@@ -366,4 +393,8 @@ a:hover{
     background-color: #2d2a29;
     text-align: center;
     line-height: 58px;
+}
+
+.footer-2 p{
+    margin:0 auto;
 }
