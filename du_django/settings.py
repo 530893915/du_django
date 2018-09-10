@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'apps.course',
     'apps.payinfo',
     'apps.cms',
+    'apps.duauth',
 ]
 
 MIDDLEWARE = [
@@ -109,6 +110,7 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+AUTH_USER_MODEL = 'duauth.User'
 
 # Internationalization
 # https://docs.djangoproject.com/en/2.0/topics/i18n/
