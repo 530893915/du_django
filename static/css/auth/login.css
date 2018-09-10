@@ -41,7 +41,7 @@
 .main-auth-group .input-group .form-control{
     width: 100%;
     height: 100%;
-    border:#ccc 1px solid;
+    border: rgba(204, 204, 204, 0.62) 1px solid;
     padding: 10px;
     box-sizing: border-box;
     outline: none;
@@ -61,5 +61,5 @@
     color: #ffffff;
     cursor: pointer;
     font-size: 25px;
-    box-shadow: 0 2px 13px 5px rgba(0, 0, 0, 0.02);
+    box-shadow: 0 2px 13px 5px rgba(0, 0, 0, 0.05);
 }
