@@ -26,14 +26,14 @@ canvas{
     position: fixed;
     z-index: -98;
     opacity: 0.7;
-    -webkit-filter:blur(3px) sepia(5%);
-    filter:blur(3px) sepia(5%);
+    -webkit-filter:blur(4px) sepia(5%);
+    filter:blur(4px) sepia(5%);
 }
 /*---------------*/
 
 html{
     /*background-color:#f2f2f2;*/
-    background: url("/static/news/images/bg.jpg") no-repeat center;
+    background: url("/static/css/news/images/bg.jpg") no-repeat center;
     filter:"progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod='scale')";
     -moz-background-size:100% 100%;
     background-size:100% 100%;
@@ -69,7 +69,7 @@ a:hover{
     width: 49px;
     height: 49px;
     border-radius: 50%;
-    background: url("images/logo.ico") no-repeat center;
+    background: url("../news/images/logo.ico") no-repeat center;
     margin-top:8px;
     float: left;
 }
@@ -126,174 +126,7 @@ a:hover{
     margin-right: 5px;
 }
 
-.main{
-    width: 1170px;
-    margin: 0 auto;
-    overflow: hidden;
-    padding-top: 85px;
-    transition: all 0.75s ease;
-}
-
-
-.main .main-container{
-    float: left;
-    width: 795px;
-
-    /*background: pink;*/
-}
-
-.main .sidebar-container{
-    float: right;
-    width: 355px;
-    background: #bababa;
-    height: 1000px;
-    box-shadow: 0 2px 13px 5px rgba(0, 0, 0, 0.02);
-}
-
-.main-container .banner{
-    width:100%;
-    overflow: hidden;
-}
-
-
-.carousel-inner{
-    box-shadow: 0 2px 13px 5px rgba(0, 0, 0, 0.02);
-}
-
-.list-outer-group{
-    margin-top:20px;
-    background: #fff;
-    height: 66px;
-    border: 1px solid #eee;
-    border-left:none;
-    border-right:none;
-    overflow: hidden;
-    box-shadow: 0 2px 13px 5px rgba(0, 0, 0, 0.02);
-}
-
-.list-outer-group .list-tab-group{
-    overflow: hidden;
-    box-shadow: 0 2px 13px 5px rgba(0, 0, 0, 0.02);
-}
-
-.list-outer-group .list-tab-group li{
-    float: left;
-    padding-left: 10px;
-    padding-right: 10px;
-    line-height: 66px;
-    font-size: 16px;
-    transition: all 0.5s ease;
-}
-
-.list-tab-group li a{
-    color: #878787;
-    transition: all 0.25s ease;
-}
-
-.list-tab-group li a:hover{
-    text-decoration: none;
-}
-
-/*.list-tab-group li.active a{*/
-    /*text-decoration: none;*/
-    /*color: #000;*/
-    /*font-size: 30px;*/
-    /*text-shadow: rgba(0, 0, 0, 0.39) 5px 5px 5px;*/
-/*}*/
-
-.list-tab-group li:hover{
-    background: rgba(184, 255, 184, 0.28);
-    border:none;
-    box-shadow: 0 2px 13px 5px rgba(0, 0, 0, 0.02);
-}
-
-.list-tab-group li:hover a{
-    color: #000;
-    font-size: 30px;
-}
-
-/*---------新闻列表---------*/
-.news-list-group{
-    background: #ffffff;
-    padding: 20px;
-    box-shadow: 0 2px 13px 5px rgba(0, 0, 0, 0.02);
-}
-
-.news-list-group li{
-    overflow: hidden;
-    padding-bottom: 20px;
-    margin-bottom: 20px;
-    border-bottom:1px solid #eee;
-}
-
-.news-list-group li .thumbnail-group{
-    float: left;
-    width: 224px;
-    height: 160px;
-}
-
-.thumbnail-group img{
-    width:100%;
-    height: 100%;
-}
-
-.news-list-group li .news-group{
-    float: right;
-    width: 500px;
-    height: 160px;
-    position: relative;
-}
-
-.news-group .title a{
-    font-size: 23px;
-    color: #212121;
-}
-
-.news-group .title a:hover{
-    text-decoration: none;
-    color: red;
-}
-
-.news-group .desc{
-    color: #878787;
-    font-size: 14px;
-    margin-top: 10px;
-}
-
-.news-group .news-more-group{
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-}
-
-.news-more-group .author,.pub-time{
-    float: right;
-    color: #878787;
-}
-
-.news-more-group .author{
-    margin-right: 20px;
-}
-
-.news-more-group .category{
-    color: #910004;
-}
-
-.load-more-group{
-    margin-top: 10px;
-    text-align: center;
-}
-
-.load-more-group .load-more-btn{
-    border:none;
-    box-shadow: 0 2px 13px 5px rgba(0, 0, 0, 0.02);
-    font-size: 20px;
-    font-weight: 600;
-}
-
-/*---------footer样式--------- */
-
+/*-------------footer样式-------------*/
 .footer{
     width:100%;
     margin-top: 200px;
@@ -316,7 +149,7 @@ a:hover{
 .footer-inner .logo-box{
     width: 54px;
     height: 54px;
-    background: url("/static/news/images/logo.ico") no-repeat center;
+    background: url("/static/css/news/images/logo.ico") no-repeat center;
     border-radius: 50%;
     margin-top: 20px;
     float: left;

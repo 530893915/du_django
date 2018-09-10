@@ -1,0 +1,23 @@
+.author-group{
+    width: 400px;
+    margin: 0 auto;
+    margin-top: 40px;
+    background: #ffffff;
+}
+
+.author-group .top-group{
+    width: 100%;
+    overflow: hidden;
+    border-bottom: 1px solid #eeeeee;
+    font-size: 22px;
+}
+
+.top-group .title{
+    float: left;
+    border-bottom: 3px solid #5b86db;
+    padding-bottom: 20px;
+}
+
+.top-group .more-link{
+    color: #5b86db;
+}
