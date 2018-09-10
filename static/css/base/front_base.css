@@ -56,6 +56,8 @@ a:hover{
     box-shadow: 0 2px 13px 5px rgba(0, 0, 0, 0.02);
     position: fixed;
     z-index: 99;
+    top:0;
+
 }
 
 .nav{

@@ -6,5 +6,6 @@ from . import views
 app_name = 'duauth'
 
 urlpatterns = [
-    path("login/",views.LoginView.as_view(),name='login')
+    path("login/",views.LoginView.as_view(),name='login'),
+    path("regist/",views.RegistView.as_view(),name='regist')
 ]

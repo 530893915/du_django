@@ -5,7 +5,7 @@
 {% endblock %}
 
 {% block head %}
-    <link rel="stylesheet" href="{% static 'css/auth/login.css' %}">
+    <link rel="stylesheet" href="{% static 'css/auth/auth.css' %}">
 {% endblock %}
 
 {% block main %}
@@ -30,6 +30,9 @@
                 </label>
                 <a href="#" class="forget-pwd">忘记密码？</a>
             </div>
+                {% for message in messages %}
+                    <div class="input-group-x"><p>{{ message }}</p></div>
+                {% endfor %}
             <div class="input-group">
                 <button class="submit-btn">登录</button>
             </div>

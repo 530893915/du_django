@@ -1,0 +1,50 @@
+{% extends 'base/front_base.html' %}
+
+{% block title %}
+    登录
+{% endblock %}
+
+{% block head %}
+    <link rel="stylesheet" href="{% static 'css/auth/auth.css' %}">
+{% endblock %}
+
+{% block main %}
+    <div class="kong-group" style="margin-top: -100px;"></div>
+    <form action="" method="post">
+        {% csrf_token %}
+        <div class="main-auth-group" style="margin-bottom: -50px">
+            <div class="top-group">
+                <span class="title">请注册</span>
+                <a href="#" class="more-link">立即登录></a>
+            </div>
+            <div class="form-group">
+                <div class="input-group">
+                    <input type="text" class="form-control" name="telephone" placeholder="请输入手机号码">
+                </div>
+                <div class="input-group">
+                    <input type="text" class="form-control" name="username" placeholder="请输入用户名">
+                </div>
+                <div class="input-group">
+                    <input type="text" class="form-control split-form-control" name="img_captcha" placeholder="请输入验证码">
+                    <img src="" alt="" class="input-group-addon img-captcha">
+                </div>
+                <div class="input-group">
+                    <input type="password" class="form-control" name="password1" placeholder="请输入密码">
+                </div>
+                <div class="input-group">
+                    <input type="password" class="form-control" name="password2" placeholder="请再次输入密码">
+                </div>
+                <div class="input-group">
+                    <input type="password" class="form-control split-form-control" name="sms_captcha" placeholder="请输入短信验证码">
+                    <span class="input-group-addon sms-captcha-btn">发送验证码</span>
+                </div>
+                    {% for message in messages %}
+                        <div class="input-group-x"><p>{{ message }}</p></div>
+                    {% endfor %}
+                <div class="input-group">
+                    <button class="submit-btn">登录</button>
+                </div>
+            </div>
+        </div>
+    </form>
+{% endblock %}
