@@ -1,16 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="597bc3c2-b1d8-47fd-b349-14547fa122e9" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/auth/regist.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/duauth/urls.py" afterPath="$PROJECT_DIR$/apps/duauth/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/duauth/views.py" afterPath="$PROJECT_DIR$/apps/duauth/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/css/base/front_base.css" afterPath="$PROJECT_DIR$/static/css/base/front_base.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/css/news/index.css" afterPath="$PROJECT_DIR$/static/css/news/index.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/auth/login.html" afterPath="$PROJECT_DIR$/templates/auth/login.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/css/auth/login.css" afterPath="$PROJECT_DIR$/static/css/auth/auth.css" />
-    </list>
+    <list default="true" id="597bc3c2-b1d8-47fd-b349-14547fa122e9" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -93,8 +84,8 @@
           <file leaf-file-name="regist.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/templates/auth/regist.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="115">
-                  <caret line="27" column="77" lean-forward="false" selection-start-line="27" selection-start-column="77" selection-end-line="27" selection-end-column="77" />
+                <state relative-caret-position="368">
+                  <caret line="35" column="22" lean-forward="true" selection-start-line="35" selection-start-column="22" selection-end-line="35" selection-end-column="22" />
                   <folding>
                     <element signature="e#225#252#0#HTML" expanded="true" />
                     <element signature="e#357#385#0#HTML" expanded="true" />
@@ -1020,22 +1011,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/auth/auth.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="393">
+          <caret line="78" column="13" lean-forward="false" selection-start-line="78" selection-start-column="13" selection-end-line="78" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/templates/auth/regist.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="27" column="77" lean-forward="false" selection-start-line="27" selection-start-column="77" selection-end-line="27" selection-end-column="77" />
+        <state relative-caret-position="368">
+          <caret line="35" column="22" lean-forward="true" selection-start-line="35" selection-start-column="22" selection-end-line="35" selection-end-column="22" />
           <folding>
             <element signature="e#225#252#0#HTML" expanded="true" />
             <element signature="e#357#385#0#HTML" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/css/auth/auth.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="463">
-          <caret line="70" column="22" lean-forward="false" selection-start-line="70" selection-start-column="22" selection-end-line="70" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
