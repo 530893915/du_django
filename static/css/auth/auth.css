@@ -56,7 +56,19 @@
 .main-auth-group .input-group .input-group-addon{
     width: 100px;
     height: 100%;
+
 }
+
+.main-auth-group .input-group .img-captcha{
+    padding: 0;
+    transition: all 0.5s ease;
+}
+
+.main-auth-group .input-group .img-captcha:hover{
+    -webkit-filter:invert(1);
+    filter:invert(1);
+}
+
 .main-auth-group .input-group .split-form-control{
     width: 240px;
 }

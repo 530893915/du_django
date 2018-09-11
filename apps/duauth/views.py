@@ -5,6 +5,9 @@ from django.views.generic import View
 from .forms import LoginForm
 from django.contrib.auth import authenticate,login
 from django.contrib import messages
+from utils.captcha.hycaptcha import Captcha
+from io import BytesIO
+from django.http import HttpResponse
 
 class LoginView(View):
     def get(self,request):
@@ -31,9 +34,20 @@ class LoginView(View):
             messages.info(request,'表单验证失败！')
             return redirect(reverse('duauth:login'))
 
-class RegistView(View):
+class RegisterView(View):
     def get(self,request):
-        return render(request, 'auth/regist.html')
+        return render(request, 'auth/register.html')
 
     def post(self,request):
         pass
+
+
+def img_captcha(request):
+    text,image = Captcha.gene_code()
+    out = BytesIO()
+    image.save(out,'png')
+    out.seek(0)
+    response = HttpResponse(content_type='image/png')
+    response.write(out.read())
+    response['Content-length'] = out.tell()
+    return response

@@ -6,6 +6,7 @@
 
 {% block head %}
     <link rel="stylesheet" href="{% static 'css/auth/auth.css' %}">
+    <script src="{% static 'js/auth.js' %}"></script>
 {% endblock %}
 
 {% block main %}
@@ -26,7 +27,7 @@
                 </div>
                 <div class="input-group">
                     <input type="text" class="form-control split-form-control" name="img_captcha" placeholder="请输入验证码">
-                    <img src="" alt="" class="input-group-addon img-captcha">
+                    <img src="{% url "duauth:img_captcha" %}" alt="" class="input-group-addon img-captcha">
                 </div>
                 <div class="input-group">
                     <input type="password" class="form-control" name="password1" placeholder="请输入密码">
@@ -42,7 +43,7 @@
                         <div class="input-group-x"><p>{{ message }}</p></div>
                     {% endfor %}
                 <div class="input-group">
-                    <button class="submit-btn">登录</button>
+                    <button class="submit-btn">注册</button>
                 </div>
             </div>
         </div>
