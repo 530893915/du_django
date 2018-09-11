@@ -85,7 +85,7 @@
     cursor: pointer;
 }
 
-.main-auth-group .input-group .disabled-btn{
+.main-auth-group .input-group .disabled{
     background: rgba(62, 80, 125, 0.6);
     pointer-events: none;
 }

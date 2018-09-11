@@ -14,7 +14,7 @@ $(function () {
 $(function () {
    var smsCaptcha = $('.sms-captcha-btn');
    smsCaptcha.click(function () {
-        smsCaptcha.addClass('disabled-btn');
+        smsCaptcha.addClass('disabled');
         var telephone = $('input[name="telephone"]').val();
         $.get({
             'url': '/account/sms_captcha/',
@@ -29,7 +29,7 @@ $(function () {
                     if(count <= -1){
                         clearInterval(timer);
                         smsCaptcha.text('发送验证码');
-                        smsCaptcha.removeClass('disabled-btn');
+                        smsCaptcha.removeClass('disabled');
                     }
                 },1000);
                 console.log('短信发送成功！');
