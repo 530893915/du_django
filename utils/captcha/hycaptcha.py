@@ -21,7 +21,7 @@ class Captcha(object):
     bgcolor = (255,255,255)
     #随机字体颜色
     random.seed(int(time.time()))
-    fontcolor = (random.randint(50,255),random.randint(50,255),random.randint(100,255))
+    fontcolor = (random.randint(100,255),random.randint(100,155),random.randint(100,155))
     # 验证码字体大小
     fontsize = 20
     #随机干扰线颜色。
@@ -35,14 +35,20 @@ class Captcha(object):
 
     # abcedf....ABCDEFG...Z
     SOURCE = list(string.ascii_letters)
+    SOURCE2 = []
     for index in range(0, 10):
         SOURCE.append(str(index))
+        SOURCE2.append(str(index))
 
     #用来随机生成一个字符串(包括英文和数字)
     # 定义成类方法,然后是私有的,对象在外面不能直接调用
     @classmethod
     def gene_text(cls):
         return ''.join(random.sample(cls.SOURCE,cls.number))#number是生成验证码的位数
+
+    @classmethod
+    def gene_number(cls):
+        return ''.join(random.sample(cls.SOURCE2, 6))
 
     #用来绘制干扰线
     @classmethod

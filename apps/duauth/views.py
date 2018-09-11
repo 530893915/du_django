@@ -8,6 +8,7 @@ from django.contrib import messages
 from utils.captcha.hycaptcha import Captcha
 from io import BytesIO
 from django.http import HttpResponse
+from utils.aliyunsdk import aliyun
 
 class LoginView(View):
     def get(self,request):
@@ -51,3 +52,9 @@ def img_captcha(request):
     response.write(out.read())
     response['Content-length'] = out.tell()
     return response
+
+def sms_captcha(request):
+    code = Captcha.gene_number()
+    telephone = request.GET.get('telephone')
+    result = aliyun.send_sms(telephone,code=code)
+    return HttpResponse('success')
