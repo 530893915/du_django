@@ -2,13 +2,14 @@
 
 from django.shortcuts import render,redirect,reverse
 from django.views.generic import View
-from .forms import LoginForm
+from .forms import LoginForm,RegisterForm
 from django.contrib.auth import authenticate,login
 from django.contrib import messages
 from utils.captcha.hycaptcha import Captcha
 from io import BytesIO
 from django.http import HttpResponse
 from utils.aliyunsdk import aliyun
+from .models import User
 
 class LoginView(View):
     def get(self,request):
@@ -35,12 +36,34 @@ class LoginView(View):
             messages.info(request,'表单验证失败！')
             return redirect(reverse('duauth:login'))
 
+# Form表单版本的注册代码
 class RegisterView(View):
     def get(self,request):
         return render(request, 'auth/register.html')
 
     def post(self,request):
-        pass
+        form = RegisterForm(request.POST)
+        if form.is_valid() and form.validate_data(request):
+            telephone = form.cleaned_data.get('telephone')
+            username = form.cleaned_data.get('username')
+            password = form.cleaned_data.get('password1')
+            user = User.objects.create_user(telephone=telephone,username=username,password=password)
+            login(request,user)
+            return redirect(reverse('news:index'))
+        else:
+            message = form.get_error()
+            messages.info(request,message)
+            return redirect(reverse('duauth:register'))
+
+# ajax请求版本的注册代码
+# class RegisterView(View):
+#     def get(self,request):
+#         return render(request, 'auth/register.html')
+#
+#     def post(self,request):
+#         form = RegisterForm(request.POST)
+#         return HttpResponse('success')
+
 
 
 def img_captcha(request):
@@ -51,10 +74,17 @@ def img_captcha(request):
     response = HttpResponse(content_type='image/png')
     response.write(out.read())
     response['Content-length'] = out.tell()
+
+    request.session['img_captcha'] = text
+
     return response
 
 def sms_captcha(request):
     code = Captcha.gene_number()
     telephone = request.GET.get('telephone')
-    result = aliyun.send_sms(telephone,code=code)
+
+    request.session['sms_captcha'] = code
+
+    # result = aliyun.send_sms(telephone,code=code)
+    print(code)
     return HttpResponse('success')

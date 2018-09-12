@@ -11,7 +11,7 @@ class UserManager(BaseUserManager):
 
     def create_user(self,telephone,username,password,**kwargs):
         kwargs['is_superuser'] = False
-        return self._create_user(telephone,username.password, **kwargs)
+        return self._create_user(telephone,username,password, **kwargs)
 
 
     def create_superuser(self,telephone,username,password,**kwargs):
@@ -22,7 +22,7 @@ class UserManager(BaseUserManager):
 class User(AbstractBaseUser,PermissionsMixin):
     telephone = models.CharField(max_length=11,unique=True)
     username = models.CharField(max_length=100,unique=True)
-    email = models.EmailField()
+    email = models.EmailField(unique=True,null=True)
     is_active = models.BooleanField(default=True)
     gender = models.IntegerField(default=0)
     date_joined = models.DateTimeField(auto_now_add=True)

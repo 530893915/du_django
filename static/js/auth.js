@@ -40,3 +40,27 @@ $(function () {
         });
    })
 });
+
+// 登录注册功能
+// $(function () {
+//
+//    var telephoneI = $("input[name='telephone']");
+//    var usernameI = $("input[name='username']");
+//    var imgCaptchaI = $("input[name='img-captcha']");
+//    var password1I = $("input[name='password1']");
+//    var password2I = $("input[name='password2']");
+//    var smsCaptchaI = $("input[name='sms-captcha']");
+//    var submitBtn = $(".submit-btn");
+//    submitBtn.click(function (event) {
+//
+//        event.preventDefault();
+//        var telephone = telephoneI.val();
+//        var username = usernameI.val();
+//        var imgCaptcha = imgCaptchaI.val();
+//        var password1 = password1I.val();
+//        var password2 = password2I.val();
+//        var smsCaptcha = smsCaptchaI.val();
+//
+//
+//    });
+// });
