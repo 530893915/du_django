@@ -5,3 +5,6 @@ def index(request):
 
 def news_detail(request,news_id):
     return render(request,'news/news_detail.html')
+
+def search(request):
+    return render(request,'news/search.html')

@@ -11,7 +11,7 @@
 
 .main .main-container .payinfo-list-container {
   padding: 17px 0 0px 17px;
-  background-color: #fff;
+  background-color: #fdfdfd;
 }
 
 .main .main-container .payinfo-list-container .payinfo-ul {
@@ -23,9 +23,11 @@
   float: left;
   width: 370px;
   height: 150px;
-  border: 1px solid #ccc;
+  /*border: 1px solid #ccc;*/
+  box-shadow: 0 2px 13px 5px rgba(0, 0, 0, 0.02);
   margin-right: 17px;
   margin-bottom: 17px;
+  background-color: #ffffff;
 }
 
 .main .main-container .payinfo-list-container .payinfo-ul li .category-group {
