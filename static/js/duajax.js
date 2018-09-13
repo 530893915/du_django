@@ -1,6 +1,3 @@
-/**
- * Created by hynev on 2018/5/15.
- */
 
 function getCookie(name) {
     var cookieValue = null;
@@ -18,7 +15,7 @@ function getCookie(name) {
     return cookieValue;
 }
 
-var xfzajax = {
+var duajax = {
     'get': function (args) {
         args['method'] = 'get';
         this.ajax(args);

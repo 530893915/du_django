@@ -10,6 +10,7 @@ from io import BytesIO
 from django.http import HttpResponse
 from utils.aliyunsdk import aliyun
 from .models import User
+from utils import restful
 
 class LoginView(View):
     def get(self,request):
@@ -37,32 +38,42 @@ class LoginView(View):
             return redirect(reverse('duauth:login'))
 
 # Form表单版本的注册代码
-class RegisterView(View):
-    def get(self,request):
-        return render(request, 'auth/register.html')
-
-    def post(self,request):
-        form = RegisterForm(request.POST)
-        if form.is_valid() and form.validate_data(request):
-            telephone = form.cleaned_data.get('telephone')
-            username = form.cleaned_data.get('username')
-            password = form.cleaned_data.get('password1')
-            user = User.objects.create_user(telephone=telephone,username=username,password=password)
-            login(request,user)
-            return redirect(reverse('news:index'))
-        else:
-            message = form.get_error()
-            messages.info(request,message)
-            return redirect(reverse('duauth:register'))
-
-# ajax请求版本的注册代码
 # class RegisterView(View):
 #     def get(self,request):
 #         return render(request, 'auth/register.html')
 #
 #     def post(self,request):
 #         form = RegisterForm(request.POST)
-#         return HttpResponse('success')
+#         if form.is_valid() and form.validate_data(request):
+#             telephone = form.cleaned_data.get('telephone')
+#             username = form.cleaned_data.get('username')
+#             password = form.cleaned_data.get('password1')
+#             user = User.objects.create_user(telephone=telephone,username=username,password=password)
+#             login(request,user)
+#             return redirect(reverse('news:index'))
+#         else:
+#             message = form.get_error()
+#             messages.info(request,message)
+#             return redirect(reverse('duauth:register'))
+
+# ajax请求版本的注册代码
+class RegisterView(View):
+    def get(self,request):
+        return render(request,'auth/register.html')
+
+    def post(self,request):
+        form = RegisterForm(request.POST)
+        if form.is_valid() and form.validate_data(request):
+            # 先验证数据是否是合法的
+            telephone = form.cleaned_data.get('telephone')
+            username = form.cleaned_data.get('username')
+            password = form.cleaned_data.get('password')
+            user = User.objects.create_user(telephone=telephone,username=username,password=password)
+            login(request,user)
+            return restful.ok()
+        else:
+            message = form.get_error()
+            return restful.params_error(message=message)
 
 
 

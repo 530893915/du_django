@@ -41,26 +41,49 @@ $(function () {
    })
 });
 
-// 登录注册功能
-// $(function () {
-//
-//    var telephoneI = $("input[name='telephone']");
-//    var usernameI = $("input[name='username']");
-//    var imgCaptchaI = $("input[name='img-captcha']");
-//    var password1I = $("input[name='password1']");
-//    var password2I = $("input[name='password2']");
-//    var smsCaptchaI = $("input[name='sms-captcha']");
-//    var submitBtn = $(".submit-btn");
-//    submitBtn.click(function (event) {
-//
-//        event.preventDefault();
-//        var telephone = telephoneI.val();
-//        var username = usernameI.val();
-//        var imgCaptcha = imgCaptchaI.val();
-//        var password1 = password1I.val();
-//        var password2 = password2I.val();
-//        var smsCaptcha = smsCaptchaI.val();
-//
-//
-//    });
-// });
+// 注册功能
+$(function () {
+    var telephoneInput = $("input[name='telephone']");
+    var usernameInput = $("input[name='username']");
+    var imgCaptchaInput = $("input[name='img-captcha']");
+    var password1Input = $("input[name='password1']");
+    var password2Input = $("input[name='password2']");
+    var smsCaptchaInput = $("input[name='sms-captcha']");
+    var submitBtn = $(".submit-btn");
+
+    submitBtn.click(function (event) {
+        // 禁止掉传统的表单发送数据的方式
+       event.preventDefault();
+
+       var telephone = telephoneInput.val();
+       var username = usernameInput.val();
+       var imgCaptcha = imgCaptchaInput.val();
+       var password1 = password1Input.val();
+       var password2 = password2Input.val();
+       var smsCaptcha = smsCaptchaInput.val();
+
+
+        duajax.post({
+            'url': '/account/register/',
+            'data': {
+                'telephone': telephone,
+                'username': username,
+                'img_captcha': imgCaptcha,
+                'password1': password1,
+                'password2': password2,
+                'sms_captcha': smsCaptcha
+            },
+            'success': function (result) {
+                if(result['code'] === 200){
+                    window.location = '/';
+                }else{
+                    layer.msg(result['message'])
+                }
+            },
+            'fail': function (error) {
+                console.log(error);
+            }
+        });
+
+    });
+});
