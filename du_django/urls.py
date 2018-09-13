@@ -18,4 +18,5 @@ from django.urls import path,include
 urlpatterns = [
     path('',include('apps.news.urls')),
     path('account/',include('apps.duauth.urls')),
+    path('course/',include('apps.course.urls')),
 ]

@@ -129,6 +129,32 @@ a:hover{
     margin-right: 5px;
 }
 
+
+.main{
+    width: 1170px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding-top: 65px;
+    transition: all 0.75s ease;
+}
+
+
+.main .main-container{
+    float: left;
+    width: 795px;
+
+    /*background: pink;*/
+}
+
+.main .sidebar-container{
+    float: right;
+    width: 355px;
+    background: #ffffff;
+    height: 640px;
+    box-shadow: 0 2px 13px 5px rgba(0, 0, 0, 0.02);
+}
+
+
 /*-------------footer样式-------------*/
 .footer{
     width:100%;
