@@ -3,7 +3,7 @@
 from django.shortcuts import render,redirect,reverse
 from django.views.generic import View
 from .forms import LoginForm,RegisterForm
-from django.contrib.auth import authenticate,login
+from django.contrib.auth import authenticate,login,logout
 from django.contrib import messages
 from utils.captcha.hycaptcha import Captcha
 from io import BytesIO
@@ -76,6 +76,10 @@ class RegisterView(View):
             return restful.params_error(message=message)
 
 
+# 注销登录
+def logout_view(request):
+    logout(request)
+    return redirect(reverse('duauth:login'))
 
 def img_captcha(request):
     text,image = Captcha.gene_code()
