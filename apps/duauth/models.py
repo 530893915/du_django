@@ -26,6 +26,7 @@ class User(AbstractBaseUser,PermissionsMixin):
     is_active = models.BooleanField(default=True)
     gender = models.IntegerField(default=0)
     date_joined = models.DateTimeField(auto_now_add=True)
+    is_staff = models.BooleanField(default=False)
 
     USERNAME_FIELD = 'telephone'
     REQUIRED_FIELDS = ['username']

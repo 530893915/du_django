@@ -20,4 +20,5 @@ urlpatterns = [
     path('account/',include('apps.duauth.urls')),
     path('course/',include('apps.course.urls')),
     path('payinfo/',include('apps.payinfo.urls')),
+    path('cms/',include('apps.cms.urls')),
 ]

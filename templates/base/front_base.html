@@ -45,17 +45,15 @@
                     <a href="javascript:void(0)">{{ user.username }}</a>
                     <div class="user-more-box">
                         <i class="triangle"></i>
-                        {% if user.is_superuser %}
-{#                            <a href="{% url 'cms:index' %}">管理系统</a>#}
-                            <a href="#">管理系统</a>
+                        {% if user.is_staff %}
+                            <a href="{% url 'cms:index' %}">管理系统</a>
                         {% endif %}
-{#                        <a href="{% url 'duauth:logout' %}">退出登录</a>#}
                         <a href="{% url 'duauth:logout' %}">注销</a>
                     </div>
                 {% else %}
                     <a href="{% url 'duauth:login' %}">登录</a>
-                    <a href="{% url 'duauth:register' %}">/</a>
-                    <a href="#">注册</a>
+                    <a href="# ">/</a>
+                    <a href="{% url 'duauth:register' %}">注册</a>
                 {% endif %}
             </div>
         </nav>
