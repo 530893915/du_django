@@ -154,6 +154,24 @@ a:hover{
     box-shadow: 0 2px 13px 5px rgba(0, 0, 0, 0.02);
 }
 
+.aabcc{
+    perspective: 500px;
+}
+
+.main-auth-group{
+    transform-style: preserve-3d;
+    animation:aaa 0.5s;
+}
+
+@keyframes aaa {
+    from{
+        transform: rotateX(270deg);
+    }
+    to{
+        transform: rotateX(360deg);
+    }
+}
+
 
 /*-------------footer样式-------------*/
 .footer{
