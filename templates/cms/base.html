@@ -81,9 +81,16 @@
             </form>
             <ul class="sidebar-menu" data-widget="tree">
                 <li>
-                    <a href="#">
+                    <a href="{% url 'cms:index' %}">
                         <i class="fa fa-home"></i>
                         <span>首页</span>
+                    </a>
+                </li>
+                <li class="header">新闻管理</li>
+                <li>
+                    <a href="{% url 'cms:write_news' %}">
+                        <i class="fa fa-edit"></i>
+                        <span>发布新闻</span>
                     </a>
                 </li>
             </ul>
