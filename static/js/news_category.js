@@ -83,13 +83,9 @@ $(function () {
                     },
                     'success': function (result) {
                         if(result['code'] === 200){
-                            xfzalert.alertSuccessToast('删除成功！');
-                            setTimeout(function () {
-                                window.location.reload();
-                            },1000)
-
+                            window.location.reload();
                         }else{
-                            xfzalert.alertErrorToast(result['message']);
+                            window.xfzalert.alertErrorToast(result['message']);
                         }
                     }
                 });
@@ -97,3 +93,4 @@ $(function () {
         });
     });
 });
+
