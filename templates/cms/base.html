@@ -9,12 +9,13 @@
     <link rel="stylesheet" href="{% static 'adminlte/bower_components/font-awesome/css/font-awesome.min.css' %}">
     <link rel="stylesheet" href="{% static 'adminlte/dist/css/AdminLTE.min.css' %}">
     <link rel="stylesheet" href="{% static 'adminlte/dist/css/skins/_all-skins.min.css' %}">
+    <link rel="stylesheet" href="{% static 'sweetalert/sweetalert.css' %}">
     <script src="{% static 'adminlte/bower_components/jquery/dist/jquery.min.js' %}"></script>
-<script>
-    $.widget.bridge('uibutton', $.ui.button);
-</script>
-<script src="{% static 'adminlte/bower_components/bootstrap/dist/js/bootstrap.min.js' %}"></script>
-<script src="{% static 'adminlte/dist/js/adminlte.min.js' %}"></script>
+    <script src="{% static 'adminlte/bower_components/bootstrap/dist/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'adminlte/dist/js/adminlte.min.js' %}"></script>
+    <script src="{% static 'sweetalert/sweetalert.min.js' %}"></script>
+    <script src="{% static 'sweetalert/xfzalert.js' %}"></script>
+    <script src="{% static 'js/duajax.js' %}"></script>
 {% block head %}{% endblock %}
 </head>
 <body class="hold-transition skin-blue sidebar-mini">
@@ -91,6 +92,12 @@
                     <a href="{% url 'cms:write_news' %}">
                         <i class="fa fa-edit"></i>
                         <span>发布新闻</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="{% url 'cms:news_category' %}">
+                        <i class="fa fa-tag"></i>
+                        <span>新闻分类</span>
                     </a>
                 </li>
             </ul>
