@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'apps.payinfo',
     'apps.cms',
     'apps.duauth',
+    'apps.ueditor',
 ]
 
 MIDDLEWARE = [
@@ -133,3 +134,26 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR,'static'),
 )
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR,'media')
+
+# 七牛云相关的配置
+QINIU_ACCESS_KEY = 'SXJAGOM6nPxMAInwr3y5yy8cuGdQeIHIKsyMsvqt'
+QINIU_SECRET_KEY = 'uoYTDGLeAbrzEcQRhuRyYhB_In8RF2ageTqE7QK4'
+QINIU_BUCKET_NAME = 'dubbs'
+QINIU_DOMAIN = 'http://pd0p68u4u.bkt.clouddn.com/'
+
+
+
+# UEditor相关的配置
+UEDITOR_UPLOAD_TO_SERVER = False
+UEDITOR_UPLOAD_PATH = MEDIA_ROOT
+UEDITOR_CONFIG_PATH = os.path.join(BASE_DIR,'static','ueditor','config.json')
+
+
+UEDITOR_QINIU_ACCESS_KEY = QINIU_ACCESS_KEY
+UEDITOR_QINIU_SECRET_KEY = QINIU_SECRET_KEY
+UEDITOR_QINIU_BUCKET_NAME = QINIU_BUCKET_NAME
+UEDITOR_QINIU_DOMAIN = QINIU_DOMAIN
+UEDITOR_UPLOAD_TO_QINIU = True

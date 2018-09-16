@@ -75,7 +75,7 @@ def qntoken(request):
     access_key = 'SXJAGOM6nPxMAInwr3y5yy8cuGdQeIHIKsyMsvqt'
     secret_key = 'uoYTDGLeAbrzEcQRhuRyYhB_In8RF2ageTqE7QK4'
     q = qiniu.Auth(access_key,secret_key)
-    bucket = 'dunews'
+    bucket = 'dubbs'
     token = q.upload_token(bucket)
     return restful.result(data={'token':token})
 

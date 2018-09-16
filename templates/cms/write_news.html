@@ -6,6 +6,8 @@
 
 {% block head %}
     <script src="https://unpkg.com/qiniu-js@2.5.1/dist/qiniu.min.js"></script>
+    <script src="{% static 'ueditor/ueditor.config.js' %}"></script>
+    <script src="{% static 'ueditor/ueditor.all.min.js' %}"></script>
     <script src="{% static 'js/write_news.js' %}"></script>
 {% endblock %}
 
@@ -57,7 +59,7 @@
                         </div>
                         <div class="form-group">
                             <label for="content-form">内容</label>
-                            <textarea name="content" id="content-form" cols="30" rows="10" class="form-control"></textarea>
+                            <script id="editor" type="text/plain"></script>
                         </div>
                     </div>
                     <div class="box-footer">

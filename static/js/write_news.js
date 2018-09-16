@@ -49,7 +49,7 @@ $(function () {
     function complete(response) {
         // hash key
         var key = response.key;
-        var domain = 'http://pf4z5jfnt.bkt.clouddn.com/';
+        var domain = 'http://pd0p68u4u.bkt.clouddn.com/';
         var url = domain + key;
         var thumbnailInput = $("input[name='thumbnail']");
         thumbnailInput.val(url);
@@ -89,4 +89,13 @@ $(function () {
             }
         })
     })
+});
+
+
+// ueditor
+$(function () {
+    var ue = UE.getEditor('editor',{
+        'initialFrameHeight': 400,
+        'serverUrl': '/ueditor/upload/'
+    });
 });
