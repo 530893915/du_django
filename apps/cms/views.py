@@ -2,18 +2,21 @@ from django.shortcuts import render
 from django.contrib.admin.views.decorators import staff_member_required
 from django.views.generic import View
 from django.views.decorators.http import require_POST,require_GET
-from apps.news.models import NewsCategory
+from apps.news.models import NewsCategory,News
 from utils import restful
-from .forms import EditNewsCategoryForm
+from .forms import EditNewsCategoryForm,WriteNewsForm
 from django.conf import settings
 import os
 import qiniu
+from django.contrib.auth.decorators import login_required
+from django.utils.decorators import method_decorator
 
 @staff_member_required(login_url='/')
 def index(request):
     return render(request,'cms/index.html')
 
 # 发布新闻
+@method_decorator(login_required(login_url='/account/login/'),name='dispatch')
 class WriteNewsView(View):
     def get(self,request):
         context = {
@@ -22,7 +25,18 @@ class WriteNewsView(View):
         return render(request,'cms/write_news.html',context=context)
 
     def post(self,request):
-        pass
+        form = WriteNewsForm(request.POST)
+        if form.is_valid():
+            title = form.cleaned_data.get('title')
+            desc = form.cleaned_data.get('desc')
+            thumbnail = form.cleaned_data.get('thumbnail')
+            content = form.cleaned_data.get('content')
+            category_id = form.cleaned_data.get('category')
+            category = NewsCategory.objects.get(pk=category_id)
+            News.objects.create(title=title,desc=desc,thumbnail=thumbnail,content=content,category=category,author=request.user)
+            return restful.ok()
+        else:
+            return restful.params_error(message=form.get_error())
 
 # 新闻分类
 def news_category(request):

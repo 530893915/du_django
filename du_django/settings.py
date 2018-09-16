@@ -42,7 +42,6 @@ INSTALLED_APPS = [
     'apps.payinfo',
     'apps.cms',
     'apps.duauth',
-    'apps.ueditor',
 ]
 
 MIDDLEWARE = [

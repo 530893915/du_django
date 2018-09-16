@@ -107,6 +107,7 @@
     float: left;
     width: 224px;
     height: 160px;
+    overflow: hidden;
 }
 
 .thumbnail-group img{
@@ -169,5 +170,15 @@
     font-weight: 600;
 }
 
-/*---------footer样式--------- */
+.imgbig{
+    transition: all 0.75s ease;
+}
 
+.item:hover .imgbig{
+    transform: scale(1.2);
+}
+
+
+.thumbnail-group:hover .imgbig{
+   transform: scale(1.2);
+}

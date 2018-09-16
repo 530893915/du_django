@@ -75,7 +75,7 @@ $(function () {
                     };
                     var config = {
                         useCdnDomain: true,
-                        region: qiniu.region.z2
+                        region: qiniu.region.z0
                     };
                     var observable = qiniu.upload(file,key,token,putExtra,config);
                     observable.subscribe({
