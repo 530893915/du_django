@@ -15,10 +15,13 @@ $(function () {
                     },
                     'success': function (result) {
                         if(result['code'] === 200){
-                            window.location.reload();
+                            xfzalert.alertSuccessToast('添加成功！');
+                            setTimeout(function () {
+                                window.location.reload();
+                            },1000)
+
                         }else{
-                            xfzalert.close();
-                            window.messageBox.showError(result['message']);
+                            xfzalert.alertErrorToast(result['message']);
                         }
                     }
                 });
@@ -48,7 +51,13 @@ $(function () {
                     },
                     'success': function (result) {
                         if(result['code'] === 200){
-                            window.location.reload();
+                            xfzalert.alertSuccessToast('修改成功！');
+                            setTimeout(function () {
+                                window.location.reload();
+                            },1000)
+
+                        }else{
+                            xfzalert.alertErrorToast(result['message']);
                         }
                     }
                 });
@@ -74,7 +83,13 @@ $(function () {
                     },
                     'success': function (result) {
                         if(result['code'] === 200){
-                            window.location.reload();
+                            xfzalert.alertSuccessToast('删除成功！');
+                            setTimeout(function () {
+                                window.location.reload();
+                            },1000)
+
+                        }else{
+                            xfzalert.alertErrorToast(result['message']);
                         }
                     }
                 });
