@@ -8,6 +8,32 @@
 
 {% block head %}
     <link rel="stylesheet" href="{% static 'css/news/index.css' %}">
+    <script src="{% static 'js/template-web.js' %}"></script>
+    <script src="{% static 'js/index.js' %}"></script>
+    <script id="news-item" type="text/html">
+    {% verbatim %}
+        {{ each newses news index }}
+            <li>
+                <div class="thumbnail-group">
+                    <a href="#">
+                        <img src="{{ news.thumbnail }}" alt="" class="imgbig">
+                    </a>
+                </div>
+                <div class="news-group">
+                    <div class="title">
+                        <a href="#">{{ news.title }}</a>
+                    </div>
+                    <p class="desc">{{ news.desc }}</p>
+                    <div class="news-more-group">
+                        <span class="category">{{ news.category.name }}</span>
+                        <span class="pub-time">{{ news.pub_time }}</span>
+                        <span class="author">{{ news.author.username }}</span>
+                    </div>
+                </div>
+            </li>
+        {{ /each }}
+    {% endverbatim %}
+    </script>
 {% endblock %}
 
 {% block main %}

@@ -6,7 +6,9 @@ from  utils import restful
 from .serializers import NewsSerializer
 
 def index(request):
-    newses = News.objects.select_related('category','author')
+    newses = News.objects.select_related('category','author')[
+        0:settings.NEWS_COUNT_ONE_PAGE
+    ]
     categories = NewsCategory.objects.all()
     context = {
         'newses': newses,

@@ -11,3 +11,6 @@ class News(models.Model):
     pub_time = models.DateTimeField(auto_now_add=True)
     category = models.ForeignKey('NewsCategory',on_delete=models.SET_NULL,null=True)
     author = models.ForeignKey('duauth.User',on_delete=models.SET_NULL,null=True)
+
+    class Meta:
+        ordering = ['-pub_time']
