@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'apps.payinfo',
     'apps.cms',
     'apps.duauth',
+    'rest_framework',
 ]
 
 MIDDLEWARE = [
@@ -156,3 +157,6 @@ UEDITOR_QINIU_SECRET_KEY = QINIU_SECRET_KEY
 UEDITOR_QINIU_BUCKET_NAME = QINIU_BUCKET_NAME
 UEDITOR_QINIU_DOMAIN = QINIU_DOMAIN
 UEDITOR_UPLOAD_TO_QINIU = True
+
+# 每页多少篇文章
+NEWS_COUNT_ONE_PAGE = 3

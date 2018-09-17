@@ -94,8 +94,42 @@ $(function () {
 
 // ueditor
 $(function () {
-    var ue = UE.getEditor('editor',{
+    window.ue = UE.getEditor('editor',{
         'initialFrameHeight': 400,
         'serverUrl': '/ueditor/upload/'
     });
+});
+
+// 发布新闻
+$(function () {
+    var submitBtn = $('#submit-btn');
+    submitBtn.click(function (event) {
+        event.preventDefault();
+
+        var title = $("input[name='title']").val();
+        var desc = $("input[name='desc']").val();
+        var category = $("select[name='category']").val();
+        var thumbnail = $("input[name='thumbnail']").val();
+        var content = window.ue.getContent();
+
+        duajax.post({
+            'url': '/cms/write_news/',
+            'data': {
+                'title': title,
+                'desc': desc,
+                'category': category,
+                'thumbnail': thumbnail,
+                'content': content
+            },
+            'success': function (result) {
+                if(result['code']===200){
+                    xfzalert.alertSuccess('发表成功！',function () {
+                        window.location.reload();
+                    })
+                }else{
+                    xfzalert.alertErrorToast(result['message']);
+                }
+            }
+        })
+    })
 });

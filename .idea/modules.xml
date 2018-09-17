@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../../100天/.idea/100天.iml" filepath="$PROJECT_DIR$/../../100天/.idea/100天.iml" />
       <module fileurl="file://$PROJECT_DIR$/../../FLASK/DU_bbs/.idea/DU_bbs.iml" filepath="$PROJECT_DIR$/../../FLASK/DU_bbs/.idea/DU_bbs.iml" />
       <module fileurl="file://E:\My_Code\Django\blog_loginTest\.idea\blog_loginTest.iml" filepath="E:\My_Code\Django\blog_loginTest\.idea\blog_loginTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/du_django.iml" filepath="$PROJECT_DIR$/.idea/du_django.iml" />

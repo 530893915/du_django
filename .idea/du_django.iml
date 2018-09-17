@@ -16,6 +16,7 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="DU_bbs" />
     <orderEntry type="module" module-name="算法数据结构" />
+    <orderEntry type="module" module-name="100天" />
   </component>
   <component name="TemplatesService">
     <option name="TEMPLATE_CONFIGURATION" value="Django" />
