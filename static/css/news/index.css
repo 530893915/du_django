@@ -23,7 +23,7 @@
     float: right;
     width: 355px;
     background: #ffffff;
-    height: 640px;
+    height: 690px;
     box-shadow: 0 2px 13px 5px rgba(0, 0, 0, 0.02);
 }
 
@@ -180,5 +180,5 @@
 
 
 .thumbnail-group:hover .imgbig{
-   transform: scale(1.2);
+   transform: scale(1.1);
 }

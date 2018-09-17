@@ -69,17 +69,17 @@
   overflow: hidden;
 }
 .sidebar-container .focus-group .website-group .left-group .item-group .logo-group {
-  width: 43px;
-  height: 43px;
+  width: 63px;
+  height: 63px;
   float: left;
-  padding-left: 20px;
+  padding: 10px;
   background-size: 100%;
 }
 .sidebar-container .focus-group .website-group .left-group .item-group .text-group {
-  font-size: 20px;
+  font-size: 18px;
   margin-left: 5px;
   float: left;
-  line-height: 28px;
+  line-height: 63px;
 }
 .sidebar-container .focus-group .website-group .left-group .item-group .text-group a {
   color: #555;
@@ -111,9 +111,37 @@
 }
 
 .icon {
-   width: 1em; height: 1em;
+   width: 1em;
+   height: 1em;
+   line-height: 4em;
    vertical-align: -0.15em;
    fill: currentColor;
    overflow: hidden;
-  padding-bottom: 15px;
+   padding-bottom: 15px;
+}
+
+.item-group .zhihu-logo{
+  transition: all 0.3s ease;
+}
+
+.item-group .zhihu-logo:hover{
+  animation: sport 1.5s .1s ease-in-out infinite;
+}
+
+@keyframes sport {
+    20%{
+        transform: scale(.8);
+    }
+    40%{
+        transform: scale(1.2);
+    }
+    60%{
+        transform: scale(.9);
+    }
+    80%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1);
+    }
 }
