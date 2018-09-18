@@ -22,10 +22,10 @@ $(function () {
                     var tpl = template('comment-item', {'comment': comment});
                     var commentGroup = $('.comment-list-group');
                     commentGroup.prepend(tpl);
-                    window.layer.msg('评论成功！', {icon: 6});
+                    window.layer.alert('评论成功！', {icon: 6});
                     textarea.val('');
                 } else {
-                    window.layer.tips('请先登录！', '#submit-comment-btn',{tips: [4, '#cc3a2e'], time: 4000});
+                    window.layer.tips('请先登录！', '#submit-comment-btn',{anim: 6,tips: [4, '#cc3a2e'], time: 4000});
                 }
             }
         });
