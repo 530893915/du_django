@@ -32,7 +32,7 @@
                     <div class="article-info-group">
                         <div class="left-info-group">
                             <span class="author-time-group">{{ news.author.username }}</span>
-                            <span class="author-time-group">{{ news.pub_time|time_since }}</span>
+                            <span class="author-time-group">{{ news.pub_time|time_since}}</span>
                             <span class="category-group">{{ news.category.name }}</span>
                         </div>
                     </div>
@@ -41,11 +41,12 @@
                         </article>
                     <div class="comment-group">
                         <h2 class="comment-title">文章评论({{ news.comments.all|length }})</h2>
-                        {% if user.is_authenticated %}
-                            <textarea id="comment-textarea" placeholder="请填写评论" cols="30" rows="10" class="comment-textarea logined-textarea"></textarea>
-                        {% else %}
-                            <textarea readonly placeholder="立即登录，参与评论~" cols="30" rows="10" class="comment-textarea nologin-textarea"></textarea>
-                        {% endif %}
+                        <textarea id="comment-textarea" placeholder="请填写评论" cols="30" rows="10" class="comment-textarea logined-textarea"></textarea>
+{#                        {% if user.is_authenticated %}#}
+{#                            <textarea id="comment-textarea" placeholder="请填写评论" cols="30" rows="10" class="comment-textarea logined-textarea"></textarea>#}
+{#                        {% else %}#}
+{#                            <textarea readonly placeholder="立即登录，参与评论~" cols="30" rows="10" class="comment-textarea nologin-textarea"></textarea>#}
+{#                        {% endif %}#}
                         <div class="submit-comment-group">
                             <button class="submit-comment-btn" id="submit-comment-btn" data-news-id="{{ news.id }}">评论</button>
                         </div>

@@ -17,17 +17,17 @@ $(function () {
                 'news_id': news_id
             },
             'success': function (result) {
-                if(result['code']===200){
+                if (result['code'] === 200) {
                     var comment = result['data'];
-                    var tpl = template('comment-item',{'comment': comment});
+                    var tpl = template('comment-item', {'comment': comment});
                     var commentGroup = $('.comment-list-group');
                     commentGroup.prepend(tpl);
-                    window.layer.msg('评论成功！',{icon:6});
+                    window.layer.msg('评论成功！', {icon: 6});
                     textarea.val('');
-                }else{
-                    window.xfzalert.alertErrorToast(result['message']);
+                } else {
+                    window.layer.tips('请先登录！', '#submit-comment-btn',{tips: [4, '#cc3a2e'], time: 4000});
                 }
             }
-        })
-    });
+        });
+    })
 });

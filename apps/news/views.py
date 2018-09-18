@@ -5,6 +5,7 @@ from django.conf import settings
 from  utils import restful
 from .serializers import NewsSerializer,CommentSerilizer
 from .forms import AddCommentForm
+from apps.duauth.decorators import du_login_required
 
 def index(request):
     newses = News.objects.select_related('category','author')[
@@ -42,6 +43,8 @@ def news_detail(request,news_id):
     except News.DoesNotExist:
         return render(request,'news/news_404.html')
 
+# 评论
+@du_login_required
 @require_POST
 def add_comment(request):
     form = AddCommentForm(request.POST)
