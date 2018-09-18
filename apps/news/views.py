@@ -1,9 +1,10 @@
 from django.shortcuts import render
-from .models import News,NewsCategory
-from django.views.decorators.http import require_GET
+from .models import News,NewsCategory,Comment
+from django.views.decorators.http import require_GET,require_POST
 from django.conf import settings
 from  utils import restful
-from .serializers import NewsSerializer
+from .serializers import NewsSerializer,CommentSerilizer
+from .forms import AddCommentForm
 
 def index(request):
     newses = News.objects.select_related('category','author')[
@@ -40,6 +41,20 @@ def news_detail(request,news_id):
         return render(request, 'news/news_detail.html', context=context)
     except News.DoesNotExist:
         return render(request,'news/news_404.html')
+
+@require_POST
+def add_comment(request):
+    form = AddCommentForm(request.POST)
+    if form.is_valid():
+        content = form.cleaned_data.get('content')
+        news_id = form.cleaned_data.get('news_id')
+        news = News.objects.get(pk=news_id)
+        comment = Comment.objects.create(content=content,news=news,author=request.user)
+        serilizer = CommentSerilizer(comment)
+        return restful.result(data=serilizer.data)
+    else:
+        return restful.params_error(message=form.get_error())
+
 
 def search(request):
     return render(request,'news/search.html')

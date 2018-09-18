@@ -3,6 +3,7 @@ from django.db import models
 class NewsCategory(models.Model):
     name = models.CharField(max_length=100)
 
+# 新闻
 class News(models.Model):
     title = models.CharField(max_length=200)
     desc = models.CharField(max_length=200)
@@ -14,3 +15,14 @@ class News(models.Model):
 
     class Meta:
         ordering = ['-pub_time']
+
+# 评论
+class Comment(models.Model):
+    content = models.TextField()
+    pub_time = models.DateTimeField(auto_now_add=True)
+    news = models.ForeignKey("News",on_delete=models.CASCADE,related_name='comments')
+    author = models.ForeignKey("duauth.User",on_delete=models.CASCADE)
+
+    class Meta:
+        ordering = ['-pub_time']
+
