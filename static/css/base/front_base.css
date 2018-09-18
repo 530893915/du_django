@@ -44,9 +44,13 @@ body{
     height:0;
 }
 
-a:hover{
-    text-decoration: none!important;
-}
+a:link{text-decoration:none!important; }  /* 指正常的未被访问过的链接*/
+
+a:visited{text-decoration:none!important; }/*指已经访问过的链接*/
+
+a:hover{text-decoration:none!important;}/*指鼠标在链接*/
+
+a:active{text-decoration:none!important;}/* 指正在点的链接*/
 
 .header{
     /*overflow: hidden;*/
@@ -187,7 +191,7 @@ a:hover{
     float: right;
     width: 355px;
     background: #ffffff;
-    height: 640px;
+    height: 690px;
     box-shadow: 0 2px 13px 5px rgba(0, 0, 0, 0.02);
 }
 

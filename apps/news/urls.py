@@ -8,7 +8,7 @@ app_name = 'news'
 
 urlpatterns = [
     path('',views.index,name='index'),
-    path('detail/<news_id>/',views.news_detail,name='news_detail'),
+    path('detail/<news_id>/',views.news_detail,name='detail'),
     path('search/',views.search,name='search'),
     path('list/',views.news_list,name='news_list'),
 ]

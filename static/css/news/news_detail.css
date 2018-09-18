@@ -62,6 +62,7 @@
 
 .main-container .article-group .article-content-group {
   margin-top: 28px;
+  overflow: hidden;
 }
 
 .main-container .article-group .comment-group {
@@ -162,4 +163,8 @@
   margin-left: 60px;
   line-height: 30px;
   padding: 20px 0;
+}
+
+.article-content-group img{
+  max-width: 100%;
 }

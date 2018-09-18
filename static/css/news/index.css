@@ -67,16 +67,10 @@
     transition: all 0.25s ease;
 }
 
-.list-tab-group li a:hover{
-    text-decoration: none;
+.list-tab-group li.active1 a{
+    color: #000;
+    font-size: 25px;
 }
-
-/*.list-tab-group li.active a{*/
-    /*text-decoration: none;*/
-    /*color: #000;*/
-    /*font-size: 30px;*/
-    /*text-shadow: rgba(0, 0, 0, 0.39) 5px 5px 5px;*/
-/*}*/
 
 .list-tab-group li:hover{
     background: rgb(0, 0, 0);
