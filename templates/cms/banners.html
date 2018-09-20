@@ -12,7 +12,7 @@
         .banner-item{
             width: 800px;
         }
-        .banner-img{
+        .banner-image{
             width: 100%;
             height: 100%;
         }
@@ -39,7 +39,7 @@
     <div class="row">
         <div class="col-md-12">
             <div class="button-group pull-left">
-                <button class="btn btn-primary">
+                <button class="btn btn-primary" id="add-banner-btn">
                     <i class="fa fa-plus"></i>
                     添加轮播图
                 </button>
@@ -51,16 +51,21 @@
         </div>
     </div>
     <div class="banner-list-group">
+
+    </div>
+    <script id="banner-item" type="text/html">
+        {% verbatim %}
         <div class="box banner-item">
             <div class="box-header">
-                <span>优先级：0</span>
-                <button class="btn btn-default btn-xs pull-right">
+                <span class="priority-span">优先级：0</span>
+                <button class="btn btn-default btn-xs pull-right close-btn">
                     <i class="fa fa-close"></i>
                 </button>
             </div>
             <div class="box-body">
                 <div class="img-group pull-left">
-                    <img src="{% static 'css/news/images/111.jpg' %}" alt="" class="banner-img">
+                    <input type="file" style="display: none;" class="image-select">
+                    <img src="/static/css/news/images/sowing.png" alt="" class="banner-image" style="cursor: pointer;">
                 </div>
                 <div class="more-group pull-left">
                     <div class="form-group">
@@ -78,8 +83,10 @@
                 </div>
             </div>
             <div class="box-footer">
-                <button class="btn btn-primary pull-right">保存</button>
+                <button class="btn btn-primary pull-right save-btn">保存</button>
             </div>
         </div>
-    </div>
+        {% endverbatim %}
+    </script>
+
 {% endblock %}

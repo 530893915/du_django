@@ -2,9 +2,9 @@ from django.shortcuts import render
 from django.contrib.admin.views.decorators import staff_member_required
 from django.views.generic import View
 from django.views.decorators.http import require_POST,require_GET
-from apps.news.models import NewsCategory,News
+from apps.news.models import NewsCategory,News,Banner
 from utils import restful
-from .forms import EditNewsCategoryForm,WriteNewsForm
+from .forms import EditNewsCategoryForm,WriteNewsForm,AddBannerForm
 from django.conf import settings
 import os
 import qiniu
@@ -93,9 +93,23 @@ def qntoken(request):
     token = q.upload_token(bucket)
     return restful.result(data={'token':token})
 
-# 轮播图上传
+# 轮播图
 def banners(request):
     return render(request,'cms/banners.html')
+
+# 上传轮播图
+def add_banner(request):
+    form = AddBannerForm(request.POST)
+    if form.is_valid():
+        title_h3 = form.cleaned_data.get('title_h3')
+        title_p = form.cleaned_data.get('title_p')
+        image_url = form.cleaned_data.get('image_url')
+        link_to = form.cleaned_data.get('link_to')
+        priority = form.cleaned_data.get('priority')
+        banner = Banner.objects.create(title_h3=title_h3,title_p=title_p,image_url=image_url,link_to=link_to,priority=priority)
+        return restful.result(data={"banner_id": banner.pk})
+    else:
+        return restful.params_error(message=form.get_error())
 
 # 上传文件到自己的服务器
 @require_POST

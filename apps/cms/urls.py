@@ -15,4 +15,5 @@ urlpatterns = [
     path('upload_file/',views.upload_file,name='upload_file'),
     path('qntoken/',views.qntoken,name='qntoken'),
     path('banners/',views.banners,name='banners'),
+    path('add_banner/',views.add_banner,name='add_banner'),
 ]

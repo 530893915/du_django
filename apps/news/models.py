@@ -26,3 +26,12 @@ class Comment(models.Model):
     class Meta:
         ordering = ['-pub_time']
 
+
+# 轮播图
+class Banner(models.Model):
+    title_h3 = models.CharField(max_length=20)
+    title_p = models.CharField(max_length=40)
+    image_url = models.URLField()
+    priority = models.IntegerField(default=0)
+    link_to = models.URLField()
+    pub_time = models.DateTimeField(auto_now_add=True)
