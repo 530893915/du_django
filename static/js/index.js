@@ -38,6 +38,7 @@ $(function () {
 $(function () {
     var loadBtn = $('.load-more-btn');
     loadBtn.click(function () {
+        layer.load();
         var li = $('.list-tab-group li.active1');
         var category_id = li.attr('data-category-id');
         var page = parseInt(loadBtn.attr('data-page'));
@@ -51,7 +52,6 @@ $(function () {
             'success':function (result) {
                 var newses = result['data'];
                 if(newses.length>0){
-                    layer.load();
                     var tpl = template("news-item",{"newses":newses});
                     var newsListGroup = $('.news-list-group');
                     newsListGroup.append(tpl);
@@ -61,6 +61,7 @@ $(function () {
                 }else{
                     loadBtn.text('没有更多了。。。');
                     window.layer.msg('没有更多啦~',{anim: 6});
+                    layer.closeAll('loading');
                 }
             }
         })

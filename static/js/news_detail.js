@@ -25,7 +25,7 @@ $(function () {
                     window.layer.alert('评论成功！', {icon: 6});
                     textarea.val('');
                 } else {
-                    window.layer.tips('请先登录！', '#submit-comment-btn',{anim: 6,tips: [4, '#cc3a2e'], time: 4000});
+                    window.layer.tips(result['message'], '#submit-comment-btn',{anim: 6,tips: [4, '#cc3a2e'], time: 4000});
                 }
             }
         });

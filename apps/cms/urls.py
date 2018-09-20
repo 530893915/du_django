@@ -14,4 +14,5 @@ urlpatterns = [
     path('delete_news_category/',views.delete_news_category,name='delete_news_category'),
     path('upload_file/',views.upload_file,name='upload_file'),
     path('qntoken/',views.qntoken,name='qntoken'),
+    path('banners/',views.banners,name='banners'),
 ]

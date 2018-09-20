@@ -87,3 +87,39 @@ $(function () {
 
     });
 });
+
+
+// 登录功能
+// $(function () {
+//     var telephoneInput = $("input[name='telephone']");
+//     var passwordInput = $("input[name='password']");
+//     var submitBtn = $(".submit-btn");
+//
+//     submitBtn.click(function (event) {
+//         // 禁止掉传统的表单发送数据的方式
+//        event.preventDefault();
+//
+//        var telephone = telephoneInput.val();
+//        var password = passwordInput.val();
+//
+//
+//         duajax.post({
+//             'url': '/account/login/',
+//             'data': {
+//                 'telephone': telephone,
+//                 'password': password
+//             },
+//             'success': function (result) {
+//                 if(result['code'] === 200){
+//                     window.location = '/';
+//                 }else{
+//                     layer.msg(result['message'])
+//                 }
+//             },
+//             'fail': function (error) {
+//                 console.log(error);
+//             }
+//         });
+//
+//     });
+// });

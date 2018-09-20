@@ -93,6 +93,10 @@ def qntoken(request):
     token = q.upload_token(bucket)
     return restful.result(data={'token':token})
 
+# 轮播图上传
+def banners(request):
+    return render(request,'cms/banners.html')
+
 # 上传文件到自己的服务器
 @require_POST
 def upload_file(request):
