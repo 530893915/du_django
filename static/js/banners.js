@@ -41,8 +41,8 @@ function addImageSelectEvent(bannerItem) {
 function addSaveBannerEvent(bannerItem) {
     var saveBtn = bannerItem.find(".save-btn");
     var image = bannerItem.find(".banner-image");
-    var titleh3 = bannerItem.find("input[name='title_h3']");
-    var titlep = bannerItem.find("input[name='title_p']");
+    var titleh3 = bannerItem.find("input[name='title-h3']");
+    var titlep = bannerItem.find("input[name='title-p']");
     var priorityInput = bannerItem.find("input[name='priority']");
     var linktoInput = bannerItem.find("input[name='link_to']");
     saveBtn.click(function () {
@@ -67,6 +67,9 @@ function addSaveBannerEvent(bannerItem) {
                     bannerItem.attr('data-banner-id',bannerId);
                     var prioritySpan = bannerItem.find('.priority-span');
                     prioritySpan.text("优先级："+ priority);
+                }else{
+                    console.log(result['message']);
+                    console.log(result['code']);
                 }
             }
         })

@@ -35,3 +35,6 @@ class Banner(models.Model):
     priority = models.IntegerField(default=0)
     link_to = models.URLField()
     pub_time = models.DateTimeField(auto_now_add=True)
+
+    class Meta:
+        ordering = ['-priority']
