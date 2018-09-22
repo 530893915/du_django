@@ -15,6 +15,14 @@ from django.utils.decorators import method_decorator
 def index(request):
     return render(request,'cms/index.html')
 
+# 新闻列表管理页面
+def news_list(request):
+    context = {
+        'categories': NewsCategory.objects.all(),
+        'newses': News.objects.select_related('category','author').all()
+    }
+    return render(request,'cms/news_list.html',context=context)
+
 # 发布新闻
 @method_decorator(login_required(login_url='/account/login/'),name='dispatch')
 class WriteNewsView(View):

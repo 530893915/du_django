@@ -35,3 +35,10 @@ def time_since(value):
         return '%s天前'%days
     else:
         return value.strftime("%Y/%m/%d %H:%M")
+
+@register.filter
+def time_format(value):
+    if not isinstance(value,datetime):
+        return value
+    else:
+        return value.strftime("%Y/%m/%d %H:%M:%S")
