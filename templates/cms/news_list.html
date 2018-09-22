@@ -80,21 +80,40 @@
         <span>第1页/总共10页</span>
         <nav aria-label="Page navigation" class="pull-right">
           <ul class="pagination">
+          {% if page_obj.has_previous %}
             <li>
-              <a href="#" aria-label="Previous">
+              <a href="?p={{ page_obj.previous_page_number }}" aria-label="Previous">
                 <span aria-hidden="true">&laquo;</span>
               </a>
             </li>
-            <li class="active"><a href="#">1</a></li>
-            <li><a href="#">2</a></li>
-            <li><a href="#">3</a></li>
-            <li><a href="#">4</a></li>
-            <li><a href="#">5</a></li>
+          {% else %}
+              <li class="disabled">
+                 <span aria-hidden="true">&laquo;</span>
+              </li>
+          {% endif %}
+          {% for page in paginator.page_range %}
+              {% if page == page_obj.number %}
+                <li class="active">
+              {% else %}
+                 <li>
+              {% endif %}
+                  <a href="?p={{ page }}">{{ page }}</a>
+              </li>
+          {% endfor %}
+          
+
+
+            {% if page_obj.has_next %}
             <li>
-              <a href="#" aria-label="Next">
+              <a href="?p={{ page_obj.next_page_number }}" aria-label="Next">
                 <span aria-hidden="true">&raquo;</span>
               </a>
             </li>
+          {% else %}
+              <li class="disabled">
+                <span aria-hidden="true">&raquo;</span>
+              </li>
+          {% endif %}
           </ul>
         </nav>
     </div>

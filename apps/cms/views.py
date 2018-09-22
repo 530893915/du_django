@@ -10,6 +10,7 @@ import os
 import qiniu
 from django.contrib.auth.decorators import login_required
 from django.utils.decorators import method_decorator
+from django.core.paginator import Paginator
 
 @staff_member_required(login_url='/')
 def index(request):
@@ -17,9 +18,15 @@ def index(request):
 
 # 新闻列表管理页面
 def news_list(request):
+    page = int(request.GET.get('p',1))
+    newses = News.objects.select_related('category','author').all()
+    paginator = Paginator(newses,5)
+    page_obj = paginator.page(page)
     context = {
         'categories': NewsCategory.objects.all(),
-        'newses': News.objects.select_related('category','author').all()
+        'newses': page_obj.object_list,
+        'paginator': paginator,
+        'page_obj': page_obj
     }
     return render(request,'cms/news_list.html',context=context)
 
