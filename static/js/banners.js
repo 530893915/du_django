@@ -2,11 +2,34 @@
  * Created by Administrator on 2018/9/20.
  */
 
-// 右上关闭
+// 右上关闭(删除)
 function addCloseBannerEvent(bannerItem) {
     var closeBtn = bannerItem.find('.close-btn');
+    var bannerId = bannerItem.attr('data-banner-id');
     closeBtn.click(function () {
-        bannerItem.remove();
+        if(bannerId){
+            xfzalert.alertConfirm({
+                'text': '您确定要删除这个轮播图吗？',
+                'confirmCallback': function () {
+
+                    duajax.post({
+                        'url': '/cms/delete_banner/',
+                        'data': {
+                            'banner_id': bannerId
+                        },
+                        'success': function (result) {
+                            if(result['code']===200){
+                                bannerItem.remove();
+                                window.xfzalert.alertSuccessToast('删除成功！');
+                            }
+                        }
+                    })
+                }
+            })
+        }else{
+            bannerItem.remove();
+        }
+
     });
 }
 
@@ -45,6 +68,13 @@ function addSaveBannerEvent(bannerItem) {
     var titlep = bannerItem.find("input[name='title-p']");
     var priorityInput = bannerItem.find("input[name='priority']");
     var linktoInput = bannerItem.find("input[name='link_to']");
+    var bannerId = bannerItem.attr('data-banner-id');
+    var url = '';
+    if(bannerId){
+        url = '/cms/edit_banner/'
+    }else{
+        url = '/cms/add_banner/'
+    }
     saveBtn.click(function () {
         var image_url = image.attr('src');
         var title_h3 = titleh3.val();
@@ -53,23 +83,29 @@ function addSaveBannerEvent(bannerItem) {
         var link_to = linktoInput.val();
 
         duajax.post({
-            'url': '/cms/add_banner/',
+            'url': url,
             'data': {
                 'image_url': image_url,
                 'title_h3': title_h3,
                 'title_p': title_p,
                 'priority': priority,
-                'link_to': link_to
+                'link_to': link_to,
+                'pk': bannerId
             },
             'success': function (result) {
                 if(result['code']===200){
-                    var bannerId = result['data']['banner_id'];
-                    bannerItem.attr('data-banner-id',bannerId);
+                    if(!bannerId){
+                        bannerId = result['data']['banner_id'];
+                        bannerItem.attr('data-banner-id',bannerId);
+                        window.xfzalert.alertSuccessToast('保存成功！');
+                    }else{
+                        window.xfzalert.alertSuccessToast('修改成功！');
+                    }
                     var prioritySpan = bannerItem.find('.priority-span');
                     prioritySpan.text("优先级："+ priority);
-                }else{
-                    xfzalert.alertErrorToast(result['message']);
 
+                }else{
+                    window.xfzalert.alertErrorToast(result['message']);
                 }
             }
         })
@@ -97,8 +133,14 @@ $(function () {
 // 绑定添加轮播图按钮的点击事件
 $(function () {
     var addBtn = $('#add-banner-btn');
+    var bannerListGroup = $('.banner-list-group');
     addBtn.click(function () {
-        createBannerItem();
+        var length = bannerListGroup.children().length;
+        if(length >=6){
+            window.xfzalert.alertErrorToast('最多添加6个轮播图！');
+        }else{
+            createBannerItem();
+        }
     });
 });
 
@@ -117,5 +159,7 @@ function createBannerItem(banner) {
     addImageSelectEvent(bannerItem);
     addSaveBannerEvent(bannerItem);
 }
+
+
 
 

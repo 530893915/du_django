@@ -4,7 +4,7 @@ from django.views.generic import View
 from django.views.decorators.http import require_POST,require_GET
 from apps.news.models import NewsCategory,News,Banner
 from utils import restful
-from .forms import EditNewsCategoryForm,WriteNewsForm,AddBannerForm
+from .forms import EditNewsCategoryForm,WriteNewsForm,AddBannerForm,EditBannerForm
 from django.conf import settings
 import os
 import qiniu
@@ -102,6 +102,26 @@ def banner_list(request):
     return restful.result(data={"banners":banners})
 
 # 删除轮播图
+def delete_banner(request):
+    banner_id = request.POST.get('banner_id')
+    banner = Banner.objects.filter(pk=banner_id).delete()
+    return restful.ok()
+
+# 编辑轮播图
+def edit_banner(request):
+    form = EditBannerForm(request.POST)
+    if form.is_valid():
+        pk = form.cleaned_data.get('pk')
+        title_h3 = form.cleaned_data.get('title_h3')
+        title_p = form.cleaned_data.get('title_p')
+        image_url = form.cleaned_data.get('image_url')
+        link_to = form.cleaned_data.get('link_to')
+        priority = form.cleaned_data.get('priority')
+        banner = Banner.objects.filter(pk=pk).update(title_h3=title_h3,title_p=title_p,image_url=image_url,link_to=link_to,priority=priority)
+        banner.save()
+        return restful.ok()
+    else:
+        return restful.params_error(message=form.get_error())
 
 
 # 上传轮播图
