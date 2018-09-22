@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from .models import News,NewsCategory,Comment
+from .models import News,NewsCategory,Comment,Banner
 from django.views.decorators.http import require_GET,require_POST
 from django.conf import settings
 from  utils import restful
@@ -12,9 +12,11 @@ def index(request):
         0:settings.NEWS_COUNT_ONE_PAGE
     ]
     categories = NewsCategory.objects.all()
+    banners = Banner.objects.all()
     context = {
         'newses': newses,
-        'categories': categories
+        'categories': categories,
+        'banners': banners
     }
     return render(request,'news/index.html',context=context)
 

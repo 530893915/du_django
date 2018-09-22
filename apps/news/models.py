@@ -29,8 +29,8 @@ class Comment(models.Model):
 
 # 轮播图
 class Banner(models.Model):
-    title_h3 = models.CharField(max_length=20)
-    title_p = models.CharField(max_length=40)
+    title_h3 = models.TextField()
+    title_p = models.TextField()
     image_url = models.URLField()
     priority = models.IntegerField(default=0)
     link_to = models.URLField()

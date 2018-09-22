@@ -118,7 +118,6 @@ def edit_banner(request):
         link_to = form.cleaned_data.get('link_to')
         priority = form.cleaned_data.get('priority')
         banner = Banner.objects.filter(pk=pk).update(title_h3=title_h3,title_p=title_p,image_url=image_url,link_to=link_to,priority=priority)
-        banner.save()
         return restful.ok()
     else:
         return restful.params_error(message=form.get_error())
