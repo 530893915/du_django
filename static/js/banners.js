@@ -68,8 +68,8 @@ function addSaveBannerEvent(bannerItem) {
                     var prioritySpan = bannerItem.find('.priority-span');
                     prioritySpan.text("优先级："+ priority);
                 }else{
-                    console.log(result['message']);
-                    console.log(result['code']);
+                    xfzalert.alertErrorToast(result['message']);
+
                 }
             }
         })
@@ -77,17 +77,45 @@ function addSaveBannerEvent(bannerItem) {
     });
 }
 
+// 网页加载完毕后就执行获取轮播图列表的事件
+$(function () {
+    duajax.get({
+        'url': '/cms/banner_list/',
+        'success': function (result) {
+            if(result['code']===200){
+                var banners = result['data']['banners'];
+                for(var i=0; i<banners.length; i++){
+                    var banner = banners[i];
+                    createBannerItem(banner);
+                }
+
+            }
+        }
+    })
+});
+
+// 绑定添加轮播图按钮的点击事件
 $(function () {
     var addBtn = $('#add-banner-btn');
     addBtn.click(function () {
-        var tpl = template("banner-item");
-        var bannerListGroup = $(".banner-list-group");
-        bannerListGroup.prepend(tpl);
-        var bannerItem = bannerListGroup.find('.banner-item:last');
-        addCloseBannerEvent(bannerItem);
-        addImageSelectEvent(bannerItem);
-        addSaveBannerEvent(bannerItem);
+        createBannerItem();
     });
 });
+
+function createBannerItem(banner) {
+    var tpl = template("banner-item",{'banner':banner});
+    var bannerListGroup = $(".banner-list-group");
+    var bannerItem = null;
+    if(banner){
+        bannerListGroup.append(tpl);
+        bannerItem = bannerListGroup.find('.banner-item:last');
+    }else{
+        bannerListGroup.prepend(tpl);
+        bannerItem = bannerListGroup.find('.banner-item:first');
+    }
+    addCloseBannerEvent(bannerItem);
+    addImageSelectEvent(bannerItem);
+    addSaveBannerEvent(bannerItem);
+}
 
 

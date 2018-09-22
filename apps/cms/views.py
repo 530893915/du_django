@@ -97,6 +97,13 @@ def qntoken(request):
 def banners(request):
     return render(request,'cms/banners.html')
 
+def banner_list(request):
+    banners = list(Banner.objects.all().values())
+    return restful.result(data={"banners":banners})
+
+# 删除轮播图
+
+
 # 上传轮播图
 def add_banner(request):
     form = AddBannerForm(request.POST)
