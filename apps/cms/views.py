@@ -145,6 +145,11 @@ class EditNewsView(View):
         else:
             return restful.params_error(message=form.get_error())
 
+def delete_news(request):
+    pk = request.POST.get('pk')
+    News.objects.filter(pk=pk).delete()
+    return restful.ok()
+
 # 新闻分类
 def news_category(request):
     categories = NewsCategory.objects.order_by('-id')

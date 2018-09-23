@@ -22,3 +22,29 @@ $(function () {
     $("input[name='end']").datepicker(options);
 
 });
+
+
+$(function () {
+    var deleteBtns = $(".delete-btn");
+    deleteBtns.click(function () {
+        var pk = $(this).attr('data-news-id');
+        xfzalert.alertConfirm({
+            'text': '您确定要删除这篇新闻吗？',
+            'confirmCallback': function () {
+                duajax.post({
+                    'url': '/cms/delete_news/',
+                    'data': {
+                        'pk': pk
+                    },
+                    'success': function (result) {
+                        if(result['code'] === 200){
+                            // window.location.reload();
+                            window.location = window.location.href;
+                            window.xfzalert.alertSuccessToast('删除成功！');
+                        }
+                    }
+                });
+            }
+        })
+    });
+});
