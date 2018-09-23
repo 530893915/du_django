@@ -5,7 +5,9 @@
 {% endblock %}
 
 {% block head %}
-
+    <script src="{% static 'ueditor/ueditor.config.js' %}"></script>
+    <script src="{% static 'ueditor/ueditor.all.min.js' %}"></script>
+    <script src="{% static 'js/pub_course.js' %}"></script>
 {% endblock %}
 
 {% block content-header %}
@@ -13,5 +15,60 @@
 {% endblock %}
 
 {% block content %}
+    <div class="row">
+        <div class="col-md-12">
+            <div class="box">
+                <div class="box-header">
 
+                </div>
+                <div class="box-body">
+                    <form action="" method="post">
+                        <div class="form-group">
+                            <label for="title-group">标题：</label>
+                            <input type="text" class="form-control" id="title-input" name="title" placeholder="标题">
+                        </div>
+                        <div class="form-group">
+                            <label for="category-group">视频分类：</label>
+                            <select name="category" id="category-select" class="form-control">
+                                {% for category in categories %}
+                                    <option value="{{ category.pk }}">{{ category.name }}</option>
+                                {% endfor %}
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="teacher-select">选手：</label>
+                            <select name="teacher" id="teacher-select" class="form-control">
+                                {% for teacher in teachers %}
+                                    <option value="{{ teacher.pk }}">{{ teacher.username }}</option>
+                                {% endfor %}
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="video-input">视频地址：</label>
+                            <input type="text" class="form-control" name="video_url" id="video-input">
+                        </div>
+                        <div class="form-group">
+                            <label for="cover-input">封面图：</label>
+                            <input type="text" class="form-control" name="cover_url" id="cover-input">
+                        </div>
+                        <div class="form-group">
+                            <label for="price-input">价格：</label>
+                            <input type="text" class="form-control" name="price" id="price-input">
+                        </div>
+                        <div class="form-group">
+                            <label for="duration-input">时长：</label>
+                            <input type="text" class="form-control" name="duration" id="duration-input">
+                        </div>
+                        <div class="form-group">
+                            <label>简介：</label>
+                            <script id="editor" type="text/plain"></script>
+                        </div>
+                    </form>
+                </div>
+                <div class="box-footer">
+                    <button class="btn btn-primary pull-right" id="submit-btn">发布视频</button>
+                </div>
+            </div>
+        </div>
+    </div>
 {% endblock %}
