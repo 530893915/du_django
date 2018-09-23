@@ -1,7 +1,7 @@
 #coding:utf8
 
 from django.urls import path
-from . import views
+from . import views,course_views
 
 app_name = 'cms'
 
@@ -20,4 +20,11 @@ urlpatterns = [
     path('delete_banner/',views.delete_banner,name='delete_banner'),
     path('edit_banner/',views.edit_banner,name='edit_banner'),
     path('news_list/',views.NewsList.as_view(),name='news_list'),
+    path('edit_news/',views.EditNewsView.as_view(),name='edit_news'),
+]
+
+
+# 视频
+urlpatterns += [
+    path('pub_course/',course_views.PubCourse.as_view(),name='pub_course'),
 ]

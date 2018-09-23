@@ -2,288 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="597bc3c2-b1d8-47fd-b349-14547fa122e9" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/docs/_static/screenshots/demo_head.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/docs/_static/screenshots/markup_component.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/docs/_static/screenshots/markup_daterange.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/docs/_static/screenshots/markup_inline.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/docs/_static/screenshots/markup_input.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/docs/_static/screenshots/option_calendarweeks.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/docs/_static/screenshots/option_clearbtn.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/docs/_static/screenshots/option_daysofweekdisabled.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/docs/_static/screenshots/option_enddate.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/docs/_static/screenshots/option_language.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/docs/_static/screenshots/option_multidate.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/docs/_static/screenshots/option_startdate.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/docs/_static/screenshots/option_todaybtn.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/docs/_static/screenshots/option_todayhighlight.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/docs/_static/screenshots/option_weekstart.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/.bower.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/.editorconfig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/.github/ISSUE_TEMPLATE.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/.github/PULL_REQUEST_TEMPLATE.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/.gitignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/.travis.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/CHANGELOG.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/CODE_OF_CONDUCT.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/CONTRIBUTING.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/Gruntfile.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/bower.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/build/build.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/build/build3.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/build/build_standalone.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/build/build_standalone3.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/composer.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker.standalone.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker.standalone.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker.standalone.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker3.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker3.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker3.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker3.standalone.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker3.standalone.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker3.standalone.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/dist/js/bootstrap-datepicker.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/dist/locales/bootstrap-datepicker-en-CA.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/dist/locales/bootstrap-datepicker.ar-tn.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/dist/locales/bootstrap-datepicker.ar.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/dist/locales/bootstrap-datepicker.az.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/dist/locales/bootstrap-datepicker.bg.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/dist/locales/bootstrap-datepicker.bn.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/dist/locales/bootstrap-datepicker.br.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/dist/locales/bootstrap-datepicker.bs.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/dist/locales/bootstrap-datepicker.ca.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/dist/locales/bootstrap-datepicker.cs.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/dist/locales/bootstrap-datepicker.cy.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/dist/locales/bootstrap-datepicker.da.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/dist/locales/bootstrap-datepicker.de.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/dist/locales/bootstrap-datepicker.el.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/dist/locales/bootstrap-datepicker.en-AU.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/dist/locales/bootstrap-datepicker.en-GB.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/dist/locales/bootstrap-datepicker.en-IE.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/dist/locales/bootstrap-datepicker.en-NZ.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/dist/locales/bootstrap-datepicker.en-ZA.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/dist/locales/bootstrap-datepicker.eo.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/dist/locales/bootstrap-datepicker.es.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/dist/locales/bootstrap-datepicker.et.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/dist/locales/bootstrap-datepicker.eu.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/dist/locales/bootstrap-datepicker.fa.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/dist/locales/bootstrap-datepicker.fi.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/dist/locales/bootstrap-datepicker.fo.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/dist/locales/bootstrap-datepicker.fr-CH.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/dist/locales/bootstrap-datepicker.fr.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/dist/locales/bootstrap-datepicker.gl.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/dist/locales/bootstrap-datepicker.he.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/dist/locales/bootstrap-datepicker.hi.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/dist/locales/bootstrap-datepicker.hr.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/dist/locales/bootstrap-datepicker.hu.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/dist/locales/bootstrap-datepicker.hy.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/dist/locales/bootstrap-datepicker.id.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/dist/locales/bootstrap-datepicker.is.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/dist/locales/bootstrap-datepicker.it-CH.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/dist/locales/bootstrap-datepicker.it.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/dist/locales/bootstrap-datepicker.ja.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/dist/locales/bootstrap-datepicker.ka.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/dist/locales/bootstrap-datepicker.kh.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/dist/locales/bootstrap-datepicker.kk.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/dist/locales/bootstrap-datepicker.km.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/dist/locales/bootstrap-datepicker.ko.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/dist/locales/bootstrap-datepicker.kr.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/dist/locales/bootstrap-datepicker.lt.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/dist/locales/bootstrap-datepicker.lv.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/dist/locales/bootstrap-datepicker.me.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/dist/locales/bootstrap-datepicker.mk.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/dist/locales/bootstrap-datepicker.mn.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/dist/locales/bootstrap-datepicker.ms.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/dist/locales/bootstrap-datepicker.nb.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/dist/locales/bootstrap-datepicker.nl-BE.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/dist/locales/bootstrap-datepicker.nl.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/dist/locales/bootstrap-datepicker.no.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/dist/locales/bootstrap-datepicker.oc.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/dist/locales/bootstrap-datepicker.pl.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/dist/locales/bootstrap-datepicker.pt-BR.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/dist/locales/bootstrap-datepicker.pt.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/dist/locales/bootstrap-datepicker.ro.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/dist/locales/bootstrap-datepicker.rs-latin.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/dist/locales/bootstrap-datepicker.rs.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/dist/locales/bootstrap-datepicker.ru.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/dist/locales/bootstrap-datepicker.si.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/dist/locales/bootstrap-datepicker.sk.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/dist/locales/bootstrap-datepicker.sl.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/dist/locales/bootstrap-datepicker.sq.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/dist/locales/bootstrap-datepicker.sr-latin.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/dist/locales/bootstrap-datepicker.sr.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/dist/locales/bootstrap-datepicker.sv.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/dist/locales/bootstrap-datepicker.sw.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/dist/locales/bootstrap-datepicker.ta.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/dist/locales/bootstrap-datepicker.tg.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/dist/locales/bootstrap-datepicker.th.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/dist/locales/bootstrap-datepicker.tr.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/dist/locales/bootstrap-datepicker.uk.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/dist/locales/bootstrap-datepicker.uz-cyrl.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/dist/locales/bootstrap-datepicker.uz-latn.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/dist/locales/bootstrap-datepicker.vi.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/dist/locales/bootstrap-datepicker.zh-CN.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/dist/locales/bootstrap-datepicker.zh-TW.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/docs/Makefile" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/docs/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/docs/_screenshots/demo_head.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/docs/_screenshots/markup_component.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/docs/_screenshots/markup_daterange.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/docs/_screenshots/markup_inline.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/docs/_screenshots/markup_input.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/docs/_screenshots/option_calendarweeks.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/docs/_screenshots/option_clearbtn.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/docs/_screenshots/option_daysofweekdisabled.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/docs/_screenshots/option_enddate.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/docs/_screenshots/option_language.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/docs/_screenshots/option_multidate.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/docs/_screenshots/option_startdate.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/docs/_screenshots/option_todaybtn.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/docs/_screenshots/option_todayhighlight.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/docs/_screenshots/option_weekstart.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/docs/_screenshots/script/common.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/docs/_screenshots/script/common.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/docs/_screenshots/script/debug.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/docs/_screenshots/script/html-imports.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/docs/_screenshots/script/screenshot.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/docs/conf.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/docs/events.rst" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/docs/i18n.rst" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/docs/index.rst" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/docs/keyboard.rst" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/docs/make.bat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/docs/markup.rst" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/docs/methods.rst" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/docs/options.rst" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/docs/requirements.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/grunt/.jshintrc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/js/.jscsrc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/js/.jshintrc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/js/bootstrap-datepicker.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/js/locales/bootstrap-datepicker-en-CA.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/js/locales/bootstrap-datepicker.ar-tn.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/js/locales/bootstrap-datepicker.ar.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/js/locales/bootstrap-datepicker.az.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/js/locales/bootstrap-datepicker.bg.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/js/locales/bootstrap-datepicker.bn.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/js/locales/bootstrap-datepicker.br.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/js/locales/bootstrap-datepicker.bs.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/js/locales/bootstrap-datepicker.ca.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/js/locales/bootstrap-datepicker.cs.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/js/locales/bootstrap-datepicker.cy.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/js/locales/bootstrap-datepicker.da.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/js/locales/bootstrap-datepicker.de.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/js/locales/bootstrap-datepicker.el.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/js/locales/bootstrap-datepicker.en-AU.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/js/locales/bootstrap-datepicker.en-GB.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/js/locales/bootstrap-datepicker.en-IE.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/js/locales/bootstrap-datepicker.en-NZ.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/js/locales/bootstrap-datepicker.en-ZA.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/js/locales/bootstrap-datepicker.eo.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/js/locales/bootstrap-datepicker.es.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/js/locales/bootstrap-datepicker.et.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/js/locales/bootstrap-datepicker.eu.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/js/locales/bootstrap-datepicker.fa.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/js/locales/bootstrap-datepicker.fi.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/js/locales/bootstrap-datepicker.fo.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/js/locales/bootstrap-datepicker.fr-CH.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/js/locales/bootstrap-datepicker.fr.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/js/locales/bootstrap-datepicker.gl.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/js/locales/bootstrap-datepicker.he.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/js/locales/bootstrap-datepicker.hi.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/js/locales/bootstrap-datepicker.hr.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/js/locales/bootstrap-datepicker.hu.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/js/locales/bootstrap-datepicker.hy.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/js/locales/bootstrap-datepicker.id.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/js/locales/bootstrap-datepicker.is.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/js/locales/bootstrap-datepicker.it-CH.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/js/locales/bootstrap-datepicker.it.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/js/locales/bootstrap-datepicker.ja.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/js/locales/bootstrap-datepicker.ka.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/js/locales/bootstrap-datepicker.kh.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/js/locales/bootstrap-datepicker.kk.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/js/locales/bootstrap-datepicker.km.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/js/locales/bootstrap-datepicker.ko.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/js/locales/bootstrap-datepicker.kr.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/js/locales/bootstrap-datepicker.lt.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/js/locales/bootstrap-datepicker.lv.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/js/locales/bootstrap-datepicker.me.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/js/locales/bootstrap-datepicker.mk.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/js/locales/bootstrap-datepicker.mn.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/js/locales/bootstrap-datepicker.ms.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/js/locales/bootstrap-datepicker.nb.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/js/locales/bootstrap-datepicker.nl-BE.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/js/locales/bootstrap-datepicker.nl.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/js/locales/bootstrap-datepicker.no.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/js/locales/bootstrap-datepicker.oc.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/js/locales/bootstrap-datepicker.pl.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/js/locales/bootstrap-datepicker.pt-BR.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/js/locales/bootstrap-datepicker.pt.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/js/locales/bootstrap-datepicker.ro.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/js/locales/bootstrap-datepicker.rs-latin.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/js/locales/bootstrap-datepicker.rs.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/js/locales/bootstrap-datepicker.ru.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/js/locales/bootstrap-datepicker.si.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/js/locales/bootstrap-datepicker.sk.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/js/locales/bootstrap-datepicker.sl.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/js/locales/bootstrap-datepicker.sq.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/js/locales/bootstrap-datepicker.sr-latin.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/js/locales/bootstrap-datepicker.sr.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/js/locales/bootstrap-datepicker.sv.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/js/locales/bootstrap-datepicker.sw.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/js/locales/bootstrap-datepicker.ta.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/js/locales/bootstrap-datepicker.tg.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/js/locales/bootstrap-datepicker.th.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/js/locales/bootstrap-datepicker.tr.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/js/locales/bootstrap-datepicker.uk.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/js/locales/bootstrap-datepicker.uz-cyrl.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/js/locales/bootstrap-datepicker.uz-latn.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/js/locales/bootstrap-datepicker.vi.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/js/locales/bootstrap-datepicker.zh-CN.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/js/locales/bootstrap-datepicker.zh-TW.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/less/.csslintrc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/less/datepicker.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/less/datepicker3.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/tests/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/tests/assets/coverage.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/tests/assets/jquery-1.7.1.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/tests/assets/mock.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/tests/assets/qunit-logging.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/tests/assets/qunit.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/tests/assets/qunit.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/tests/assets/utils.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/tests/suites/calendar-weeks.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/tests/suites/component.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/tests/suites/data-api.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/tests/suites/events.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/tests/suites/formats.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/tests/suites/inline.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/tests/suites/keyboard_navigation/2011.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/tests/suites/keyboard_navigation/2012.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/tests/suites/keyboard_navigation/all.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/tests/suites/methods.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/tests/suites/methods_jquery.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/tests/suites/mouse_navigation/2011.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/tests/suites/mouse_navigation/2012.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/tests/suites/mouse_navigation/all.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/tests/suites/noconflict.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/tests/suites/options.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/tests/suites/timezone.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/tests/suites/touch_navigation/all.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/tests/tests.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/tests/timezone.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/adminlte/bower_components/bootstrap-datepicker/yarn.lock" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/cms_news_list.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apps/cms/course_views.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/cms/pub_course.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/cms/forms.py" afterPath="$PROJECT_DIR$/apps/cms/forms.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/cms/urls.py" afterPath="$PROJECT_DIR$/apps/cms/urls.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/cms/views.py" afterPath="$PROJECT_DIR$/apps/cms/views.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/news/templatetags/news_filters.py" afterPath="$PROJECT_DIR$/apps/news/templatetags/news_filters.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/js/write_news.js" afterPath="$PROJECT_DIR$/static/js/write_news.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/cms/base.html" afterPath="$PROJECT_DIR$/templates/cms/base.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/cms/news_list.html" afterPath="$PROJECT_DIR$/templates/cms/news_list.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/cms/write_news.html" afterPath="$PROJECT_DIR$/templates/cms/write_news.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -306,21 +35,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="banners.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/cms/banners.html">
+      <file leaf-file-name="write_news.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/cms/write_news.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="23">
-              <caret line="77" column="34" lean-forward="false" selection-start-line="77" selection-start-column="34" selection-end-line="77" selection-end-column="34" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="news_list.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/templates/cms/news_list.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-41">
-              <caret line="113" column="40" lean-forward="true" selection-start-line="113" selection-start-column="40" selection-end-line="113" selection-end-column="40" />
+            <state relative-caret-position="350">
+              <caret line="100" column="115" lean-forward="false" selection-start-line="100" selection-start-column="115" selection-end-line="100" selection-end-column="115" />
               <folding />
             </state>
           </provider>
@@ -330,7 +49,7 @@
         <entry file="file://$PROJECT_DIR$/static/js/cms_news_list.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="460">
-              <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+              <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
               <folding>
                 <element signature="e#0#49#0" expanded="false" />
               </folding>
@@ -341,30 +60,8 @@
       <file leaf-file-name="cms_news_list.js" pinned="false" current-in-tab="false">
         <entry file="file://D:/django项目实战/Django项目/14-0719-Django项目实战day14/codes/tzxfz/static/js/cms_news_list.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-124">
-              <caret line="3" column="104" lean-forward="true" selection-start-line="2" selection-start-column="4" selection-end-line="3" selection-end-column="104" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/apps/cms/views.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="377">
-              <caret line="56" column="46" lean-forward="true" selection-start-line="56" selection-start-column="46" selection-end-line="56" selection-end-column="46" />
-              <folding>
-                <element signature="e#0#35#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/apps/news/views.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="346">
-              <caret line="30" column="27" lean-forward="false" selection-start-line="30" selection-start-column="27" selection-end-line="30" selection-end-column="27" />
+            <state relative-caret-position="-331">
+              <caret line="3" column="104" lean-forward="false" selection-start-line="2" selection-start-column="4" selection-end-line="3" selection-end-column="104" />
               <folding />
             </state>
           </provider>
@@ -373,28 +70,54 @@
       <file leaf-file-name="news_filters.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/apps/news/templatetags/news_filters.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="580">
-              <caret line="43" column="48" lean-forward="false" selection-start-line="43" selection-start-column="48" selection-end-line="43" selection-end-column="48" />
+            <state relative-caret-position="488">
+              <caret line="44" column="61" lean-forward="false" selection-start-line="44" selection-start-column="61" selection-end-line="44" selection-end-column="61" />
+              <folding>
+                <element signature="e#17#44#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/apps/cms/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="207">
+              <caret line="130" column="68" lean-forward="true" selection-start-line="130" selection-start-column="68" selection-end-line="130" selection-end-column="68" />
+              <folding>
+                <element signature="e#0#35#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
+        <entry file="file://D:/django项目实战/Django项目/14-0719-Django项目实战day14/codes/tzxfz/apps/cms/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="184">
+              <caret line="145" column="52" lean-forward="true" selection-start-line="145" selection-start-column="52" selection-end-line="145" selection-end-column="52" />
+              <folding>
+                <element signature="e#0#35#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="forms.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/apps/cms/forms.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="373">
+              <caret line="26" column="29" lean-forward="false" selection-start-line="26" selection-start-column="29" selection-end-line="26" selection-end-column="29" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="base.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/cms/base.html">
+      <file leaf-file-name="write_news.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/static/js/write_news.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2116">
-              <caret line="92" column="42" lean-forward="false" selection-start-line="92" selection-start-column="42" selection-end-line="92" selection-end-column="42" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="banners.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static/js/banners.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3174">
-              <caret line="138" column="23" lean-forward="false" selection-start-line="138" selection-start-column="23" selection-end-line="138" selection-end-column="23" />
+            <state relative-caret-position="428">
+              <caret line="123" column="21" lean-forward="true" selection-start-line="123" selection-start-column="21" selection-end-line="123" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -403,9 +126,11 @@
       <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/apps/cms/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="460">
-              <caret line="21" column="45" lean-forward="false" selection-start-line="21" selection-start-column="45" selection-end-line="21" selection-end-column="45" />
-              <folding />
+            <state relative-caret-position="368">
+              <caret line="22" column="38" lean-forward="false" selection-start-line="22" selection-start-column="38" selection-end-line="22" selection-end-column="38" />
+              <folding>
+                <element signature="e#14#42#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -416,9 +141,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
-        <option value="Python Script" />
-        <option value="HTML File" />
         <option value="JavaScript File" />
+        <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -443,8 +168,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="&lt;f525778e-4a9a-47c7-86bb-65f447aa8bf5&gt;/opt/dubbs/DU_bbs/static/front/css/front_postdetail.css" />
-        <option value="&lt;f525778e-4a9a-47c7-86bb-65f447aa8bf5&gt;/opt/dubbs/DU_bbs/templates/front/front_base.html" />
         <option value="&lt;f525778e-4a9a-47c7-86bb-65f447aa8bf5&gt;/opt/dubbs/DU_bbs/templates/front/front_index.html" />
         <option value="$PROJECT_DIR$/../../FLASK/DU_bbs/static/dulayue.js" />
         <option value="$PROJECT_DIR$/static/sweetalert/xfzalert.js" />
@@ -453,8 +176,6 @@
         <option value="$PROJECT_DIR$/du_django/urls.py" />
         <option value="$PROJECT_DIR$/../../100天/1.数据预处理.py" />
         <option value="$PROJECT_DIR$/../../100天/1.数据预处理/1.数据预处理.py" />
-        <option value="$PROJECT_DIR$/templates/cms/write_news.html" />
-        <option value="$PROJECT_DIR$/static/js/write_news.js" />
         <option value="$PROJECT_DIR$/static/css/news/templatetags/news_filters.py" />
         <option value="$PROJECT_DIR$/apps/duauth/serializers.py" />
         <option value="D:/django项目实战/Django项目/11-0711-Django项目实战day11/codes/tzxfz/templates/news/index.html" />
@@ -483,17 +204,21 @@
         <option value="$PROJECT_DIR$/apps/cms/models.py" />
         <option value="D:/django项目实战/Django项目/12-0713-Django项目实战day12/codes/tzxfz/apps/cms/views.py" />
         <option value="$PROJECT_DIR$/templates/cms/banners.html" />
-        <option value="$PROJECT_DIR$/apps/cms/forms.py" />
         <option value="$PROJECT_DIR$/static/js/banners.js" />
         <option value="$PROJECT_DIR$/apps/news/models.py" />
         <option value="$PROJECT_DIR$/templates/news/index.html" />
-        <option value="$PROJECT_DIR$/templates/cms/base.html" />
-        <option value="$PROJECT_DIR$/apps/news/templatetags/news_filters.py" />
         <option value="$PROJECT_DIR$/apps/news/views.py" />
-        <option value="$PROJECT_DIR$/apps/cms/urls.py" />
         <option value="$PROJECT_DIR$/static/js/cms_news_list.js" />
-        <option value="$PROJECT_DIR$/apps/cms/views.py" />
+        <option value="$PROJECT_DIR$/templates/cms/pub_course.html" />
+        <option value="$PROJECT_DIR$/apps/cms/course_views.py" />
+        <option value="$PROJECT_DIR$/templates/cms/base.html" />
+        <option value="$PROJECT_DIR$/apps/cms/urls.py" />
         <option value="$PROJECT_DIR$/templates/cms/news_list.html" />
+        <option value="$PROJECT_DIR$/templates/cms/write_news.html" />
+        <option value="$PROJECT_DIR$/apps/cms/forms.py" />
+        <option value="$PROJECT_DIR$/apps/news/templatetags/news_filters.py" />
+        <option value="$PROJECT_DIR$/apps/cms/views.py" />
+        <option value="$PROJECT_DIR$/static/js/write_news.js" />
       </list>
     </option>
   </component>
@@ -1194,60 +919,11 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="5" />
+      <option name="time" value="6" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://D:/django项目实战/Django项目/18-0727-Django项目实战day18/codes/tzxfz/apps/xfzauth/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="23" column="48" lean-forward="false" selection-start-line="23" selection-start-column="48" selection-end-line="23" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/duauth/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52">
-          <caret line="38" column="0" lean-forward="true" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/js/auth.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="911">
-          <caret line="108" column="42" lean-forward="true" selection-start-line="108" selection-start-column="42" selection-end-line="108" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/django项目实战/Django项目/18-0727-Django项目实战day18/codes/tzxfz/static/js/news_detail.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="267">
-          <caret line="15" column="8" lean-forward="true" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/js/write_news.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2691">
-          <caret line="119" column="16" lean-forward="false" selection-start-line="119" selection-start-column="16" selection-end-line="119" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/news/news_detail.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="9" column="43" lean-forward="false" selection-start-line="9" selection-start-column="43" selection-end-line="9" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/js/front_base.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="759">
-          <caret line="33" column="3" lean-forward="false" selection-start-line="33" selection-start-column="3" selection-end-line="33" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/apps/news/forms.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="138">
@@ -1398,16 +1074,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/apps/cms/forms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="419">
-          <caret line="31" column="28" lean-forward="false" selection-start-line="31" selection-start-column="28" selection-end-line="31" selection-end-column="28" />
-          <folding>
-            <element signature="e#14#46#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://D:/django项目实战/Django项目/13-0718-Django项目实战day13/tzxfz/apps/news/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-432">
@@ -1437,14 +1103,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/cms/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2116">
-          <caret line="92" column="42" lean-forward="false" selection-start-line="92" selection-start-column="42" selection-end-line="92" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/static/js/banners.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3174">
@@ -1453,26 +1111,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/apps/news/templatetags/news_filters.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="580">
-          <caret line="43" column="48" lean-forward="false" selection-start-line="43" selection-start-column="48" selection-end-line="43" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/apps/news/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="346">
           <caret line="30" column="27" lean-forward="false" selection-start-line="30" selection-start-column="27" selection-end-line="30" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/cms/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="21" column="45" lean-forward="false" selection-start-line="21" selection-start-column="45" selection-end-line="21" selection-end-column="45" />
           <folding />
         </state>
       </provider>
@@ -1501,14 +1143,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/cms/banners.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="77" column="34" lean-forward="false" selection-start-line="77" selection-start-column="34" selection-end-line="77" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://D:/django项目实战/Django项目/14-0719-Django项目实战day14/codes/tzxfz/templates/cms/news_list.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
@@ -1525,18 +1159,96 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/templates/cms/banners.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="77" column="34" lean-forward="false" selection-start-line="77" selection-start-column="34" selection-end-line="77" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/cms/course_views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="6" column="50" lean-forward="false" selection-start-line="6" selection-start-column="50" selection-end-line="6" selection-end-column="50" />
+          <folding>
+            <element signature="e#13#50#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/cms/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="373">
+          <caret line="114" column="39" lean-forward="false" selection-start-line="114" selection-start-column="39" selection-end-line="114" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/cms/news_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="281">
+          <caret line="100" column="76" lean-forward="false" selection-start-line="100" selection-start-column="76" selection-end-line="100" selection-end-column="76" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/cms/pub_course.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://D:/django项目实战/Django项目/14-0719-Django项目实战day14/codes/tzxfz/static/js/cms_news_list.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-124">
-          <caret line="3" column="104" lean-forward="true" selection-start-line="2" selection-start-column="4" selection-end-line="3" selection-end-column="104" />
+        <state relative-caret-position="-331">
+          <caret line="3" column="104" lean-forward="false" selection-start-line="2" selection-start-column="4" selection-end-line="3" selection-end-column="104" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/cms/write_news.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="100" column="115" lean-forward="false" selection-start-line="100" selection-start-column="115" selection-end-line="100" selection-end-column="115" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/cms/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="22" column="38" lean-forward="false" selection-start-line="22" selection-start-column="38" selection-end-line="22" selection-end-column="38" />
+          <folding>
+            <element signature="e#14#42#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/django项目实战/Django项目/14-0719-Django项目实战day14/codes/tzxfz/apps/cms/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="22" column="31" lean-forward="false" selection-start-line="22" selection-start-column="31" selection-end-line="22" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/django项目实战/Django项目/14-0719-Django项目实战day14/codes/tzxfz/apps/cms/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="145" column="52" lean-forward="true" selection-start-line="145" selection-start-column="52" selection-end-line="145" selection-end-column="52" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/apps/cms/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="377">
-          <caret line="56" column="46" lean-forward="true" selection-start-line="56" selection-start-column="46" selection-end-line="56" selection-end-column="46" />
+        <state relative-caret-position="207">
+          <caret line="130" column="68" lean-forward="true" selection-start-line="130" selection-start-column="68" selection-end-line="130" selection-end-column="68" />
           <folding>
             <element signature="e#0#35#0" expanded="true" />
           </folding>
@@ -1546,17 +1258,43 @@
     <entry file="file://$PROJECT_DIR$/static/js/cms_news_list.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="460">
-          <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
           <folding>
             <element signature="e#0#49#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/cms/news_list.html">
+    <entry file="file://$PROJECT_DIR$/apps/cms/forms.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-41">
-          <caret line="113" column="40" lean-forward="true" selection-start-line="113" selection-start-column="40" selection-end-line="113" selection-end-column="40" />
+        <state relative-caret-position="373">
+          <caret line="26" column="29" lean-forward="false" selection-start-line="26" selection-start-column="29" selection-end-line="26" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/django项目实战/Django项目/14-0719-Django项目实战day14/codes/tzxfz/static/js/write_news.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2677">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/news/templatetags/news_filters.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="488">
+          <caret line="44" column="61" lean-forward="false" selection-start-line="44" selection-start-column="61" selection-end-line="44" selection-end-column="61" />
+          <folding>
+            <element signature="e#17#44#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/write_news.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="428">
+          <caret line="123" column="21" lean-forward="true" selection-start-line="123" selection-start-column="21" selection-end-line="123" selection-end-column="21" />
           <folding />
         </state>
       </provider>

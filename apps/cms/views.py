@@ -4,7 +4,7 @@ from django.views.generic import View
 from django.views.decorators.http import require_POST,require_GET
 from apps.news.models import NewsCategory,News,Banner
 from utils import restful
-from .forms import EditNewsCategoryForm,WriteNewsForm,AddBannerForm,EditBannerForm
+from .forms import EditNewsCategoryForm,WriteNewsForm,AddBannerForm,EditBannerForm,EditNewsForm
 from django.conf import settings
 import os
 import qiniu
@@ -116,6 +116,31 @@ class WriteNewsView(View):
             category_id = form.cleaned_data.get('category')
             category = NewsCategory.objects.get(pk=category_id)
             News.objects.create(title=title,desc=desc,thumbnail=thumbnail,content=content,category=category,author=request.user)
+            return restful.ok()
+        else:
+            return restful.params_error(message=form.get_error())
+
+class EditNewsView(View):
+    def get(self,request):
+        pk = request.GET.get('pk')
+        news = News.objects.get(pk=pk)
+        context= {
+            'news': news,
+            'categories': NewsCategory.objects.all()
+        }
+        return render(request,'cms/write_news.html',context=context)
+
+    def post(self,request):
+        form = EditNewsForm(request.POST)
+        if form.is_valid():
+            pk = form.cleaned_data.get('pk')
+            title = form.cleaned_data.get('title')
+            desc = form.cleaned_data.get('desc')
+            thumbnail = form.cleaned_data.get('thumbnail')
+            content = form.cleaned_data.get('content')
+            category_id = form.cleaned_data.get('category')
+            category = NewsCategory.objects.get(pk=category_id)
+            News.objects.filter(pk=pk).update(title=title, desc=desc, thumbnail=thumbnail, content=content, category=category)
             return restful.ok()
         else:
             return restful.params_error(message=form.get_error())

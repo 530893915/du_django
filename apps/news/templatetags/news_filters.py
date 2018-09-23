@@ -2,6 +2,7 @@
 from django import template
 from datetime import datetime
 from django.utils.timezone import now as now_func
+from django.utils.timezone import localtime
 
 register = template.Library()
 
@@ -41,4 +42,4 @@ def time_format(value):
     if not isinstance(value,datetime):
         return value
     else:
-        return value.strftime("%Y/%m/%d %H:%M:%S")
+        return localtime(value).strftime("%Y/%m/%d %H:%M:%S")

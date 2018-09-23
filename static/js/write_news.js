@@ -105,21 +105,29 @@ $(function () {
     var submitBtn = $('#submit-btn');
     submitBtn.click(function (event) {
         event.preventDefault();
-
+        var btn = $(this);
         var title = $("input[name='title']").val();
         var desc = $("input[name='desc']").val();
         var category = $("select[name='category']").val();
         var thumbnail = $("input[name='thumbnail']").val();
         var content = window.ue.getContent();
+        var news_id = btn.attr('data-news-id');
+        var url = '';
+        if(news_id){
+            url = '/cms/edit_news/';
+        }else{
+            url = '/cms/write_news/';
+        }
 
         duajax.post({
-            'url': '/cms/write_news/',
+            'url': url,
             'data': {
                 'title': title,
                 'desc': desc,
                 'category': category,
                 'thumbnail': thumbnail,
-                'content': content
+                'content': content,
+                'pk': news_id
             },
             'success': function (result) {
                 if(result['code']===200){

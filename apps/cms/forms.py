@@ -23,6 +23,9 @@ class WriteNewsForm(forms.ModelForm,FormMixin):
             }
         }
 
+class EditNewsForm(WriteNewsForm):
+    pk = forms.IntegerField()
+
 class AddBannerForm(forms.ModelForm,FormMixin):
     class Meta:
         model = Banner
