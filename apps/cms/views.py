@@ -17,18 +17,56 @@ def index(request):
     return render(request,'cms/index.html')
 
 # 新闻列表管理页面
-def news_list(request):
-    page = int(request.GET.get('p',1))
-    newses = News.objects.select_related('category','author').all()
-    paginator = Paginator(newses,5)
-    page_obj = paginator.page(page)
-    context = {
-        'categories': NewsCategory.objects.all(),
-        'newses': page_obj.object_list,
-        'paginator': paginator,
-        'page_obj': page_obj
-    }
-    return render(request,'cms/news_list.html',context=context)
+class NewsList(View):
+    def get(self,request):
+        page = int(request.GET.get('p',1))
+        newses = News.objects.select_related('category','author').all()
+        paginator = Paginator(newses,5)
+        page_obj = paginator.page(page)
+
+        pagination_data = self.get_pagination_data(paginator,page_obj)
+
+        context = {
+            'categories': NewsCategory.objects.all(),
+            'newses': page_obj.object_list,
+            'paginator': paginator,
+            'page_obj': page_obj
+        }
+        context.update(pagination_data)
+        return render(request,'cms/news_list.html',context=context)
+
+    def get_pagination_data(self,paginator,page_obj,around_count=2):
+        current_page = page_obj.number
+        num_pages = paginator.num_pages
+
+        # 是否左边应该出现三个点
+        left_has_more = False
+        # 是否右边应该出现三个点
+        right_has_more = False
+
+        # 1,...,3,4,[5]
+        # [48],49,50,...,52
+        if current_page <= around_count + 2:
+            left_pages = range(1, current_page)
+        else:
+            left_has_more = True
+            left_pages = range(current_page - around_count, current_page)
+
+        if current_page >= num_pages - around_count - 1:
+            right_pages = range(current_page + 1, num_pages + 1)
+        else:
+            right_has_more = True
+            right_pages = range(current_page + 1, current_page + around_count + 1)
+
+        return {
+            'left_pages': left_pages,
+            'right_pages': right_pages,
+            'current_page': current_page,
+            'left_has_more': left_has_more,
+            'right_has_more': right_has_more,
+            'num_pages': num_pages
+        }
+
 
 # 发布新闻
 @method_decorator(login_required(login_url='/account/login/'),name='dispatch')

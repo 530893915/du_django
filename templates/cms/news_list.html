@@ -77,7 +77,7 @@
         </table>
     </div>
     <div class="box-footer">
-        <span>第1页/总共10页</span>
+        <span>第{{ page_obj.number }}页/总共{{  }}页</span>
         <nav aria-label="Page navigation" class="pull-right">
           <ul class="pagination">
           {% if page_obj.has_previous %}
@@ -91,17 +91,26 @@
                  <span aria-hidden="true">&laquo;</span>
               </li>
           {% endif %}
-          {% for page in paginator.page_range %}
-              {% if page == page_obj.number %}
-                <li class="active">
-              {% else %}
-                 <li>
-              {% endif %}
-                  <a href="?p={{ page }}">{{ page }}</a>
-              </li>
-          {% endfor %}
-          
 
+
+            {% if left_has_more %}
+                <li><a href="?p=1">1</a></li>
+                <li><span>...</span></li>
+            {% endif %}
+            {% for page in left_pages %}
+                <li><a href="?p={{ page }}">{{ page }}</a></li>
+            {% endfor %}
+          
+{#          中间#}
+              <li class="active"><a href="?p={{ page_obj.number }}">{{ page_obj.number }}</a></li>
+
+            {% for page in right_pages %}
+                <li><a href="?p={{ page }}">{{ page }}</a></li>
+            {% endfor %}
+            {% if right_has_more %}
+              <li><a href="?p={{ paginator.num_pages }}">{{ paginator.num_pages }}</a></li>
+              <li><span>...</span></li>
+          {% endif %}
 
             {% if page_obj.has_next %}
             <li>
