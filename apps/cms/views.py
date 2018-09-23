@@ -11,6 +11,8 @@ import qiniu
 from django.contrib.auth.decorators import login_required
 from django.utils.decorators import method_decorator
 from django.core.paginator import Paginator
+from datetime import datetime
+from urllib import parse
 
 @staff_member_required(login_url='/')
 def index(request):
@@ -20,7 +22,24 @@ def index(request):
 class NewsList(View):
     def get(self,request):
         page = int(request.GET.get('p',1))
-        newses = News.objects.select_related('category','author').all()
+
+        start = request.GET.get('start')
+        end = request.GET.get('end')
+        title = request.GET.get('title')
+        category_id = int(request.GET.get('category',0))
+
+        newses = News.objects.select_related('category','author')
+
+        if start and end:
+            start_date = datetime.strptime(start,'%Y/%m/%d')
+            end_date = datetime.strptime(end,'%Y/%m/%d')
+            newses = newses.filter(pub_time__range=(start_date,end_date))
+        if title:
+            newses = newses.filter(title__icontains=title)
+
+        if category_id:
+            newses = newses.filter(category=category_id)
+
         paginator = Paginator(newses,5)
         page_obj = paginator.page(page)
 
@@ -30,7 +49,17 @@ class NewsList(View):
             'categories': NewsCategory.objects.all(),
             'newses': page_obj.object_list,
             'paginator': paginator,
-            'page_obj': page_obj
+            'page_obj': page_obj,
+            'title': title,
+            'start':start,
+            'end':end,
+            'category_id':category_id,
+            'url_query': "&"+parse.urlencode({
+                'start':start,
+                'end': end,
+                'title': title,
+                'category': category_id
+            })
         }
         context.update(pagination_data)
         return render(request,'cms/news_list.html',context=context)
