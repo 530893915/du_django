@@ -1,5 +1,5 @@
 $(function () {
-    if(template){
+    if(window.template){
         template.defaults.imports.timeSince = function (dateValue) {
             var date = new Date(dateValue);
             var datets = date.getTime(); // 都是毫秒/秒，相差10000倍

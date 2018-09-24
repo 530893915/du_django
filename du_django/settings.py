@@ -160,3 +160,9 @@ UEDITOR_UPLOAD_TO_QINIU = True
 
 # 每页多少篇文章
 NEWS_COUNT_ONE_PAGE = 3
+
+# 百度云的配置
+# 控制台->用户中心->用户ID
+BAIDU_CLOUD_USER_ID = '	f2c8c38a98cd4e3cafda8f39137bcf77'
+# 点播VOD->全局设置->发布设置->安全设置->UserKey
+BAIDU_CLOUD_USER_KEY = '4d64e8bb35cf4bd7'
