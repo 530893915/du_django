@@ -28,4 +28,5 @@ class CourseOrder(models.Model):
     buyer = models.ForeignKey("duauth.User",on_delete=models.DO_NOTHING)
     # 1:支付宝支付
     # 2:微信支付
-    istype = models.SmallIntegerField()
+    # 0:未知
+    istype = models.SmallIntegerField(default=0)

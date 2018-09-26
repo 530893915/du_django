@@ -1,8 +1,10 @@
 from django.shortcuts import render
-from .models import Course
+from .models import Course,CourseOrder
 from django.conf import settings
 import time,os,hmac,hashlib
 from utils import restful
+from hashlib import md5
+from django.shortcuts import reverse
 
 def course_index(request):
     context = {
@@ -37,5 +39,35 @@ def course_token(request):
     return restful.result(data={'token': token})
 
 def course_order(request):
-    return render(request,'course/create_order.html')
+    course_id = request.GET.get('course_id')
+    course = Course.objects.get(pk=course_id)
+    order = CourseOrder.objects.create(amount=course.price,course=course,buyer=request.user,status=1)
+    context = {
+        'course': course,
+        'notify_url': request.build_absolute_uri('/notify_url/'),
+        'return_url': request.build_absolute_uri(reverse('course:course_detail',kwargs={'course_id':course.pk})),
+        'order': order
+    }
+    return render(request,'course/create_order.html',context=context)
+
+def order_key(request):
+    goodsname = request.POST.get("goodsname")
+    istype = request.POST.get("istype")
+    notify_url = request.POST.get("notify_url")
+    orderid = request.POST.get("orderid")
+    price = request.POST.get("price")
+    return_url = request.POST.get("return_url")
+
+    token = 'e6110f92abcb11040ba153967847b7a6'
+    orderuid = str(request.user.pk)
+    uid = '49dc532695baa99e16e01bc0'
+
+    # key = md5((goodsname + istype + notify_url + orderid + orderuid + price + return_url + token + uid).encode("utf-8")).hexdigest()
+    key = md5("".join([goodsname, istype, notify_url, orderuid, orderuid, price, return_url, token, uid]).encode(
+        "utf-8")).hexdigest()
+    return restful.result(data={'key': key})
+
+
+def notify_view(request):
+    return restful.ok()
 
