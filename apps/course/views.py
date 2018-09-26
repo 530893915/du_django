@@ -36,3 +36,6 @@ def course_token(request):
     token = '{0}_{1}_{2}'.format(signature, USER_ID, expiration_time)
     return restful.result(data={'token': token})
 
+def course_order(request):
+    return render(request,'course/create_order.html')
+
