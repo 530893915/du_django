@@ -84,30 +84,37 @@
     </style>
     <script>
     $(function () {
-        var goodsname = $("input[name='goodsname']").val();
-        var istype = $("input[name='istype']").val();
-        var notify_url = $("input[name='notify_url']").val();
-        var orderid = $("input[name='orderid']").val();
-        var price = $("input[name='price']").val();
-        var return_url = $("input[name='return_url']").val();
-        duajax.post({
-            'url': '/course/order_key/',
-            'data': {
-                'goodsname': goodsname,
-                'istype': istype,
-                'notify_url': notify_url,
-                'orderid': orderid,
-                'price': price,
-                'return_url': return_url
-            },
-            'success': function (result) {
-                if(result['code'] === 200){
-                    var key = result['data']['key'];
-                    var keyInput = $("input[name='key']");
-                    keyInput.val(key);
+        var submitBtn = $('#submit-btn');
+        submitBtn.click(function (event) {
+            event.preventDefault();
+
+            var goodsname = $("input[name='goodsname']").val();
+            var istype = $("input[name='istype']:checked").val();
+            var notify_url = $("input[name='notify_url']").val();
+            var orderid = $("input[name='orderid']").val();
+            var price = $("input[name='price']").val();
+            var return_url = $("input[name='return_url']").val();
+            duajax.post({
+                'url': '/course/order_key/',
+                'data': {
+                    'goodsname': goodsname,
+                    'istype': istype,
+                    'notify_url': notify_url,
+                    'orderid': orderid,
+                    'price': price,
+                    'return_url': return_url
+                },
+                'success': function (result) {
+                    if(result['code'] === 200){
+                        var key = result['data']['key'];
+                        var keyInput = $("input[name='key']");
+                        keyInput.val(key);
+                        $('#order-form').submit();
+                    }
                 }
-            }
-        });
+            });
+
+        })
     });
     </script>
 {% endblock %}
@@ -138,7 +145,7 @@
                 </tr>
             </tbody>
         </table>
-            <form action="https://pay.bbbapi.com/" method="post">
+            <form action="https://pay.bbbapi.com/" method="post" id="order-form">
                 <input type="hidden" name="uid" value="49dc532695baa99e16e01bc0">
                 <input type="hidden" name="price" value="{{ course.price }}">
                 <input type="hidden" name="notify_url" value="{{ notify_url }}">
@@ -161,7 +168,7 @@
                 <div style="clear: both;"></div>
             </div>
             <div class="submit-group">
-                <input type="submit" value="去支付" class="submit-btn">
+                <input type="submit" value="去支付" class="submit-btn" id="submit-btn">
             </div>
         </form>
         </div>

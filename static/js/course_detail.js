@@ -7,6 +7,7 @@ $(function () {
     var span = $(".video-container span");
     var video_url = span.attr("data-video-url");
     var cover_url = span.attr('data-cover-url');
+    var course_id = span.attr('data-course-id');
     var player = cyberplayer("playercontainer").setup({
         width: '100%',
         height: '100%',
@@ -29,14 +30,16 @@ $(function () {
         duajax.get({
             'url': '/course/course_token/',
             'data': {
-                'video_url': video_url
+                'video_url': video_url,
+                'course_id': course_id
             },
             'success': function (result) {
                 if(result['code'] === 200){
                     var token = result['data']['token'];
                     player.setToken(e.file,token);
                 }else{
-                    window.xfzalert.alertErrorToast('token获取错误！');
+                    window.layer.msg(result['message'],{icon:5});
+                    player.stop();
                 }
             }
         });
