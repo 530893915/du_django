@@ -64,7 +64,7 @@
                     <div class="detail-item-group">
                         <p class="inner-course-title">{{ course.title }}</p>
                         <div class="buy-course-group">
-                            <a href="javascript(0);" class="buy-course-btn">开通权限</a>
+                            <a href="{% url 'course:course_order' %}?course_id={{ course.pk }}" class="buy-course-btn">开通权限</a>
                             <span class="price-text">￥{{ course.price }}</span>
                         </div>
                     </div>
