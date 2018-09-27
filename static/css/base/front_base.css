@@ -28,6 +28,7 @@ canvas{
     opacity: 0.7;
     -webkit-filter:blur(3px) sepia(5%);
     filter:blur(3px) sepia(5%);
+    left:0;
 }
 /*---------------*/
 

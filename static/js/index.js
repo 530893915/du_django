@@ -29,6 +29,7 @@ $(function () {
                 newsListGroup.append(tpl);
                 li.addClass('active1').siblings().removeClass('active1');
                 loadBtn.attr('data-page',2);
+                loadBtn.text('加载更多');
             }
         })
     })
