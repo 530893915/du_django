@@ -627,7 +627,7 @@ if (XRegExp) {
         }
     );
 
-    // Whitespace and comments, in free-spacing (aka extended) mode only
+    // Whitespace and commands, in free-spacing (aka extended) mode only
     XRegExp.addToken(
         /(?:\s+|#.*)+/,
         function (match) {
@@ -1979,7 +1979,7 @@ if (typeof(SyntaxHighlighter) == 'undefined') var SyntaxHighlighter = function()
 
         /**
          * Checks to see if any of the matches are inside of other matches.
-         * This process would get rid of highligted strings inside comments,
+         * This process would get rid of highligted strings inside commands,
          * keywords inside strings and so on.
          */
         removeNestedMatches: function(matches)
@@ -2401,8 +2401,8 @@ typeof(exports) != 'undefined' ? exports.SyntaxHighlighter = SyntaxHighlighter :
             ;
 
         this.regexList = [
-            { regex: SyntaxHighlighter.regexLib.singleLineCComments,	css: 'comments' },		// one line comments
-            { regex: SyntaxHighlighter.regexLib.multiLineCComments,		css: 'comments' },		// multiline comments
+            { regex: SyntaxHighlighter.regexLib.singleLineCComments,	css: 'comments' },		// one line commands
+            { regex: SyntaxHighlighter.regexLib.multiLineCComments,		css: 'comments' },		// multiline commands
             { regex: SyntaxHighlighter.regexLib.doubleQuotedString,		css: 'string' },		// double quoted strings
             { regex: SyntaxHighlighter.regexLib.singleQuotedString,		css: 'string' },		// single quoted strings
             { regex: /\b([\d]+(\.[\d]+)?|0x[a-f0-9]+)\b/gi,				css: 'value' },			// numbers
@@ -2442,7 +2442,7 @@ typeof(exports) != 'undefined' ? exports.SyntaxHighlighter = SyntaxHighlighter :
             { regex: /(--|#).*$/gm,
                 css: 'comments' },
 
-            { regex: /\(\*(?:[\s\S]*?\(\*[\s\S]*?\*\))*[\s\S]*?\*\)/gm, // support nested comments
+            { regex: /\(\*(?:[\s\S]*?\(\*[\s\S]*?\*\))*[\s\S]*?\*\)/gm, // support nested commands
                 css: 'comments' },
 
             { regex: /"[\s\S]*?"/gm,
@@ -2510,7 +2510,7 @@ typeof(exports) != 'undefined' ? exports.SyntaxHighlighter = SyntaxHighlighter :
 		this.regexList = [
 			{ regex: /^#!.*$/gm,											css: 'preprocessor bold' },
 			{ regex: /\/[\w-\/]+/gm,										css: 'plain' },
-			{ regex: SyntaxHighlighter.regexLib.singleLinePerlComments,		css: 'comments' },		// one line comments
+			{ regex: SyntaxHighlighter.regexLib.singleLinePerlComments,		css: 'comments' },		// one line commands
 			{ regex: SyntaxHighlighter.regexLib.doubleQuotedString,			css: 'string' },		// double quoted strings
 			{ regex: SyntaxHighlighter.regexLib.singleQuotedString,			css: 'string' },		// single quoted strings
 			{ regex: new RegExp(this.getKeywords(keywords), 'gm'),			css: 'keyword' },		// keywords
@@ -2592,7 +2592,7 @@ typeof(exports) != 'undefined' ? exports.SyntaxHighlighter = SyntaxHighlighter :
 		var operators =	'all and any between cross in join like not null or outer some';
 
 		this.regexList = [
-			{ regex: new RegExp('--(.*)$', 'gm'),						css: 'comments' },  // one line and multiline comments
+			{ regex: new RegExp('--(.*)$', 'gm'),						css: 'comments' },  // one line and multiline commands
 			{ regex: SyntaxHighlighter.regexLib.xmlComments,			css: 'comments' },    // single quoted strings
 			{ regex: SyntaxHighlighter.regexLib.doubleQuotedString,		css: 'string' },    // double quoted strings
 			{ regex: SyntaxHighlighter.regexLib.singleQuotedString,		css: 'string' },    // single quoted strings
@@ -2672,8 +2672,8 @@ typeof(exports) != 'undefined' ? exports.SyntaxHighlighter = SyntaxHighlighter :
 						'clock ctime difftime gmtime localtime mktime strftime time';
 
 		this.regexList = [
-			{ regex: SyntaxHighlighter.regexLib.singleLineCComments,	css: 'comments' },			// one line comments
-			{ regex: SyntaxHighlighter.regexLib.multiLineCComments,		css: 'comments' },			// multiline comments
+			{ regex: SyntaxHighlighter.regexLib.singleLineCComments,	css: 'comments' },			// one line commands
+			{ regex: SyntaxHighlighter.regexLib.multiLineCComments,		css: 'comments' },			// multiline commands
 			{ regex: SyntaxHighlighter.regexLib.doubleQuotedString,		css: 'string' },			// strings
 			{ regex: SyntaxHighlighter.regexLib.singleQuotedString,		css: 'string' },			// strings
 			{ regex: /^ *#.*/gm,										css: 'preprocessor' },
@@ -2718,8 +2718,8 @@ typeof(exports) != 'undefined' ? exports.SyntaxHighlighter = SyntaxHighlighter :
 		}
 
 		this.regexList = [
-			{ regex: SyntaxHighlighter.regexLib.singleLineCComments,	func : fixComments },		// one line comments
-			{ regex: SyntaxHighlighter.regexLib.multiLineCComments,		css: 'comments' },			// multiline comments
+			{ regex: SyntaxHighlighter.regexLib.singleLineCComments,	func : fixComments },		// one line commands
+			{ regex: SyntaxHighlighter.regexLib.multiLineCComments,		css: 'comments' },			// multiline commands
 			{ regex: /@"(?:[^"]|"")*"/g,								css: 'string' },			// @-quoted strings
 			{ regex: SyntaxHighlighter.regexLib.doubleQuotedString,		css: 'string' },			// strings
 			{ regex: SyntaxHighlighter.regexLib.singleQuotedString,		css: 'string' },			// strings
@@ -2790,7 +2790,7 @@ typeof(exports) != 'undefined' ? exports.SyntaxHighlighter = SyntaxHighlighter :
 		var fonts =		'[mM]onospace [tT]ahoma [vV]erdana [aA]rial [hH]elvetica [sS]ans-serif [sS]erif [cC]ourier mono sans serif';
 	
 		this.regexList = [
-			{ regex: SyntaxHighlighter.regexLib.multiLineCComments,		css: 'comments' },	// multiline comments
+			{ regex: SyntaxHighlighter.regexLib.multiLineCComments,		css: 'comments' },	// multiline commands
 			{ regex: SyntaxHighlighter.regexLib.doubleQuotedString,		css: 'string' },	// double quoted strings
 			{ regex: SyntaxHighlighter.regexLib.singleQuotedString,		css: 'string' },	// single quoted strings
 			{ regex: /\#[a-fA-F0-9]{3,6}/g,								css: 'value' },		// html colors
@@ -2835,8 +2835,8 @@ typeof(exports) != 'undefined' ? exports.SyntaxHighlighter = SyntaxHighlighter :
 						'widestring with word write writeln xor';
 
 		this.regexList = [
-			{ regex: /\(\*[\s\S]*?\*\)/gm,								css: 'comments' },  	// multiline comments (* *)
-			{ regex: /{(?!\$)[\s\S]*?}/gm,								css: 'comments' },  	// multiline comments { }
+			{ regex: /\(\*[\s\S]*?\*\)/gm,								css: 'comments' },  	// multiline commands (* *)
+			{ regex: /{(?!\$)[\s\S]*?}/gm,								css: 'comments' },  	// multiline commands { }
 			{ regex: SyntaxHighlighter.regexLib.singleLineCComments,	css: 'comments' },  	// one line
 			{ regex: SyntaxHighlighter.regexLib.singleQuotedString,		css: 'string' },		// strings
 			{ regex: /\{\$[a-zA-Z]+ .+\}/g,								css: 'color1' },		// compiler Directives and Region tags
@@ -2943,8 +2943,8 @@ typeof(exports) != 'undefined' ? exports.SyntaxHighlighter = SyntaxHighlighter :
 						'getText';
 
 		this.regexList = [
-			{ regex: SyntaxHighlighter.regexLib.singleLineCComments,				css: 'comments' },		// one line comments
-			{ regex: SyntaxHighlighter.regexLib.multiLineCComments,					css: 'comments' },		// multiline comments
+			{ regex: SyntaxHighlighter.regexLib.singleLineCComments,				css: 'comments' },		// one line commands
+			{ regex: SyntaxHighlighter.regexLib.multiLineCComments,					css: 'comments' },		// multiline commands
 			{ regex: SyntaxHighlighter.regexLib.doubleQuotedString,					css: 'string' },		// strings
 			{ regex: SyntaxHighlighter.regexLib.singleQuotedString,					css: 'string' },		// strings
 			{ regex: /""".*"""/g,													css: 'string' },		// GStrings
@@ -2982,9 +2982,9 @@ typeof(exports) != 'undefined' ? exports.SyntaxHighlighter = SyntaxHighlighter :
 						'transient try void volatile while';
 
 		this.regexList = [
-			{ regex: SyntaxHighlighter.regexLib.singleLineCComments,	css: 'comments' },		// one line comments
-			{ regex: /\/\*([^\*][\s\S]*)?\*\//gm,						css: 'comments' },	 	// multiline comments
-			{ regex: /\/\*(?!\*\/)\*[\s\S]*?\*\//gm,					css: 'preprocessor' },	// documentation comments
+			{ regex: SyntaxHighlighter.regexLib.singleLineCComments,	css: 'comments' },		// one line commands
+			{ regex: /\/\*([^\*][\s\S]*)?\*\//gm,						css: 'comments' },	 	// multiline commands
+			{ regex: /\/\*(?!\*\/)\*[\s\S]*?\*\//gm,					css: 'preprocessor' },	// documentation commands
 			{ regex: SyntaxHighlighter.regexLib.doubleQuotedString,		css: 'string' },		// strings
 			{ regex: SyntaxHighlighter.regexLib.singleQuotedString,		css: 'string' },		// strings
 			{ regex: /\b([\d]+(\.[\d]+)?|0x[a-f0-9]+)\b/gi,				css: 'value' },			// numbers
@@ -3068,8 +3068,8 @@ typeof(exports) != 'undefined' ? exports.SyntaxHighlighter = SyntaxHighlighter :
 		this.regexList = [
 			{ regex: r.multiLineDoubleQuotedString,					css: 'string' },			// double quoted strings
 			{ regex: r.multiLineSingleQuotedString,					css: 'string' },			// single quoted strings
-			{ regex: r.singleLineCComments,							css: 'comments' },			// one line comments
-			{ regex: r.multiLineCComments,							css: 'comments' },			// multiline comments
+			{ regex: r.singleLineCComments,							css: 'comments' },			// one line commands
+			{ regex: r.multiLineCComments,							css: 'comments' },			// multiline commands
 			{ regex: /\s*#.*/gm,									css: 'preprocessor' },		// preprocessor tags like #region and #endregion
 			{ regex: new RegExp(this.getKeywords(keywords), 'gm'),	css: 'keyword' }			// keywords
 			];
@@ -3213,8 +3213,8 @@ typeof(exports) != 'undefined' ? exports.SyntaxHighlighter = SyntaxHighlighter :
 		var constants	= '__FILE__ __LINE__ __METHOD__ __FUNCTION__ __CLASS__';
 
 		this.regexList = [
-			{ regex: SyntaxHighlighter.regexLib.singleLineCComments,	css: 'comments' },			// one line comments
-			{ regex: SyntaxHighlighter.regexLib.multiLineCComments,		css: 'comments' },			// multiline comments
+			{ regex: SyntaxHighlighter.regexLib.singleLineCComments,	css: 'comments' },			// one line commands
+			{ regex: SyntaxHighlighter.regexLib.multiLineCComments,		css: 'comments' },			// multiline commands
 			{ regex: SyntaxHighlighter.regexLib.doubleQuotedString,		css: 'string' },			// double quoted strings
 			{ regex: SyntaxHighlighter.regexLib.singleQuotedString,		css: 'string' },			// single quoted strings
 			{ regex: /\$\w+/g,											css: 'variable' },			// variables
@@ -3280,13 +3280,13 @@ typeof(exports) != 'undefined' ? exports.SyntaxHighlighter = SyntaxHighlighter :
 						'copy convertto convertfrom convert connect complete compare clear ' +
 						'checkpoint aggregate add';
 
-		// I can't find a way to match the comment based help in multi-line comments, because SH won't highlight in highlights, and javascript doesn't support lookbehind
+		// I can't find a way to match the comment based help in multi-line commands, because SH won't highlight in highlights, and javascript doesn't support lookbehind
 		var commenthelp = ' component description example externalhelp forwardhelpcategory forwardhelptargetname forwardhelptargetname functionality inputs link notes outputs parameter remotehelprunspace role synopsis';
 
 		this.regexList = [
 			{ regex: new RegExp('^\\s*#[#\\s]*\\.('+this.getKeywords(commenthelp)+').*$', 'gim'),			css: 'preprocessor help bold' },		// comment-based help
-			{ regex: SyntaxHighlighter.regexLib.singleLinePerlComments,										css: 'comments' },						// one line comments
-			{ regex: /(&lt;|<)#[\s\S]*?#(&gt;|>)/gm,														css: 'comments here' },					// multi-line comments
+			{ regex: SyntaxHighlighter.regexLib.singleLinePerlComments,										css: 'comments' },						// one line commands
+			{ regex: /(&lt;|<)#[\s\S]*?#(&gt;|>)/gm,														css: 'commands here' },					// multi-line commands
 			
 			{ regex: new RegExp('@"\\n[\\s\\S]*?\\n"@', 'gm'),												css: 'script string here' },			// double quoted here-strings
 			{ regex: new RegExp("@'\\n[\\s\\S]*?\\n'@", 'gm'),												css: 'script string single here' },		// single quoted here-strings
@@ -3376,7 +3376,7 @@ typeof(exports) != 'undefined' ? exports.SyntaxHighlighter = SyntaxHighlighter :
 						'ThreadGroup Thread Time TrueClass';
 
 		this.regexList = [
-			{ regex: SyntaxHighlighter.regexLib.singleLinePerlComments,	css: 'comments' },		// one line comments
+			{ regex: SyntaxHighlighter.regexLib.singleLinePerlComments,	css: 'comments' },		// one line commands
 			{ regex: SyntaxHighlighter.regexLib.doubleQuotedString,		css: 'string' },		// double quoted strings
 			{ regex: SyntaxHighlighter.regexLib.singleQuotedString,		css: 'string' },		// single quoted strings
 			{ regex: /\b[A-Z0-9_]+\b/g,									css: 'constants' },		// constants
@@ -3452,8 +3452,8 @@ typeof(exports) != 'undefined' ? exports.SyntaxHighlighter = SyntaxHighlighter :
 		var r = SyntaxHighlighter.regexLib;
 		
 		this.regexList = [
-			{ regex: r.multiLineCComments,								css: 'comments' },		// multiline comments
-			{ regex: r.singleLineCComments,								css: 'comments' },		// singleline comments
+			{ regex: r.multiLineCComments,								css: 'comments' },		// multiline commands
+			{ regex: r.singleLineCComments,								css: 'comments' },		// singleline commands
 			{ regex: r.doubleQuotedString,								css: 'string' },		// double quoted strings
 			{ regex: r.singleQuotedString,								css: 'string' },		// single quoted strings
 			{ regex: /\#[a-fA-F0-9]{3,6}/g,								css: 'value' },			// html colors
@@ -3491,8 +3491,8 @@ typeof(exports) != 'undefined' ? exports.SyntaxHighlighter = SyntaxHighlighter :
 		var keyops =	'[_:=><%#@]+';
 
 		this.regexList = [
-			{ regex: SyntaxHighlighter.regexLib.singleLineCComments,			css: 'comments' },	// one line comments
-			{ regex: SyntaxHighlighter.regexLib.multiLineCComments,				css: 'comments' },	// multiline comments
+			{ regex: SyntaxHighlighter.regexLib.singleLineCComments,			css: 'comments' },	// one line commands
+			{ regex: SyntaxHighlighter.regexLib.multiLineCComments,				css: 'comments' },	// multiline commands
 			{ regex: SyntaxHighlighter.regexLib.multiLineSingleQuotedString,	css: 'string' },	// multi-line strings
 			{ regex: SyntaxHighlighter.regexLib.multiLineDoubleQuotedString,    css: 'string' },	// double-quoted string
 			{ regex: SyntaxHighlighter.regexLib.singleQuotedString,				css: 'string' },	// strings
@@ -3542,7 +3542,7 @@ typeof(exports) != 'undefined' ? exports.SyntaxHighlighter = SyntaxHighlighter :
 		var operators =	'all and any between cross in join like not null or outer some';
 
 		this.regexList = [
-			{ regex: /--(.*)$/gm,												css: 'comments' },			// one line and multiline comments
+			{ regex: /--(.*)$/gm,												css: 'comments' },			// one line and multiline commands
 			{ regex: SyntaxHighlighter.regexLib.multiLineDoubleQuotedString,	css: 'string' },			// double quoted strings
 			{ regex: SyntaxHighlighter.regexLib.multiLineSingleQuotedString,	css: 'string' },			// single quoted strings
 			{ regex: new RegExp(this.getKeywords(funcs), 'gmi'),				css: 'color2' },			// functions
@@ -3583,7 +3583,7 @@ typeof(exports) != 'undefined' ? exports.SyntaxHighlighter = SyntaxHighlighter :
 						'Variant When While With WithEvents WriteOnly Xor';
 
 		this.regexList = [
-			{ regex: /'.*$/gm,										css: 'comments' },			// one line comments
+			{ regex: /'.*$/gm,										css: 'comments' },			// one line commands
 			{ regex: SyntaxHighlighter.regexLib.doubleQuotedString,	css: 'string' },			// strings
 			{ regex: /^\s*#.*$/gm,									css: 'preprocessor' },		// preprocessor tags like #region and #endregion
 			{ regex: new RegExp(this.getKeywords(keywords), 'gm'),	css: 'keyword' }			// vb keyword

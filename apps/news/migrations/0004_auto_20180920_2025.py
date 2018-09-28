@@ -30,6 +30,6 @@ class Migration(migrations.Migration):
         migrations.AlterField(
             model_name='comment',
             name='news',
-            field=models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='comments', to='news.News'),
+            field=models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='commands', to='news.News'),
         ),
     ]

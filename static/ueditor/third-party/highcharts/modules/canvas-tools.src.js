@@ -2413,7 +2413,7 @@ if(!Array.prototype.indexOf){
 			
 			// text, or spaces then CDATA
 			var css = node.childNodes[0].nodeValue + (node.childNodes.length > 1 ? node.childNodes[1].nodeValue : '');
-			css = css.replace(/(\/\*([^*]|[\r\n]|(\*+([^*\/]|[\r\n])))*\*+\/)|(^[\s]*\/\/.*)/gm, ''); // remove comments
+			css = css.replace(/(\/\*([^*]|[\r\n]|(\*+([^*\/]|[\r\n])))*\*+\/)|(^[\s]*\/\/.*)/gm, ''); // remove commands
 			css = svg.compressSpaces(css); // replace whitespace
 			var cssDefs = css.split('}');
 			for (var i=0; i<cssDefs.length; i++) {

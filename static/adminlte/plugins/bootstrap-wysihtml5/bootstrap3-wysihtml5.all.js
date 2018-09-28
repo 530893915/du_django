@@ -1606,7 +1606,7 @@ var wysihtml5 = {
                 } else {
                     var textParts = [], iterator = new RangeIterator(this, true);
                     iterateSubtree(iterator, function(node) {
-                        // Accept only text or CDATA nodes, not comments
+                        // Accept only text or CDATA nodes, not commands
                         if (node.nodeType == 3 || node.nodeType == 4) {
                             textParts.push(node.data);
                         }
@@ -8948,7 +8948,7 @@ wysihtml5.quirks.ensureProperClearing = (function() {
       }
 
       if (ret && ret.nodeType !== 3 && ret.nodeType !== 1) {
-         // do not count comments and other node types
+         // do not count commands and other node types
          ret = this.getPreviousNode(ret, ignoreEmpty);
       } else if (ret && ret.nodeType === 3 && (/^\s*$/).test(ret.textContent)) {
         // do not count empty textnodes as previus nodes

@@ -20,7 +20,7 @@ class News(models.Model):
 class Comment(models.Model):
     content = models.TextField()
     pub_time = models.DateTimeField(auto_now_add=True)
-    news = models.ForeignKey("News",on_delete=models.CASCADE,related_name='comments')
+    news = models.ForeignKey("News",on_delete=models.CASCADE,related_name='commands')
     author = models.ForeignKey("duauth.User",on_delete=models.CASCADE)
 
     class Meta:
