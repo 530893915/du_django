@@ -108,7 +108,7 @@
           cy = ch / 2;
 
         ctx.fillStyle = "#000";
-        var linesNum = 16;
+        var linesNum = 30;
         var linesRy = [];
         var requestId = null;
 
@@ -131,7 +131,8 @@
           this.vb = randomIntFromInterval(25, 100) / 100;
 
           this.draw = function() {
-            ctx.strokeStyle = "#ccc";
+{#              线条颜色#}
+            ctx.strokeStyle = "#a7a7a7";
             ctx.beginPath();
             ctx.moveTo(this.a.x, this.a.y);
             ctx.lineTo(this.b.x, this.b.y);
@@ -241,7 +242,7 @@
 
         function markPoint(p) {
           ctx.beginPath();
-          ctx.arc(p.x, p.y, 2, 0, 2 * Math.PI);
+          ctx.arc(p.x, p.y, 3, 0, 3 * Math.PI);
           ctx.fill();
         }
 
