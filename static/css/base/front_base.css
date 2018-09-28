@@ -29,6 +29,23 @@ canvas{
     /*-webkit-filter:blur(2px);*/
     /*filter:blur(2px);*/
     left:0;
+    animation: bg-fanzhuan 1.5s;
+    transition: 0.5s ease-in-out;
+}
+
+@keyframes bg-fanzhuan {
+        0%{
+            opacity: 0.3;
+        filter:invert(0);
+    }
+        50%{
+            opacity: 0.8;
+        filter:invert(100%);
+    }
+        100%{
+            opacity: 0.3;
+        filter:invert(0)
+    }
 }
 /*---------------*/
 
@@ -42,6 +59,7 @@ html{
     background-attachment: fixed;
     height: 100%;
 }
+
 body{
     height:0;
 }
