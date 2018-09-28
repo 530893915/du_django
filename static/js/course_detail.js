@@ -28,7 +28,7 @@ $(function () {
         }
 
         duajax.get({
-            'url': '/course/course_token/',
+            'url': '/payinfo/course_token/',
             'data': {
                 'video_url': video_url,
                 'course_id': course_id

@@ -27,7 +27,7 @@
 {#    视频背景#}
 {#    <video class="abc" autoplay="" loop="" style="background-image:url(>)"><source src="/static/news/images/bg-video.mp4" type="video/mp4"></video>#}
 
-    <canvas id="canvas""></canvas>
+    <canvas id="canvas"></canvas>
 
     <header class="header">
         <nav class="nav">
@@ -36,8 +36,8 @@
             <ul class="menu">
                 <li><a href="/" class="active">笔记</a></li>
                 <li><a href="{% url 'course:index' %}" class="active">视频</a></li>
-                <li><a href="#" class="active">付费资讯</a></li>
-                <li><a href="#" class="active">搜索</a></li>
+                <li><a href="{% url 'payinfo:index' %}" class="active">私密笔记</a></li>
+                <li><a href="{% url 'news:search' %}" class="active">搜索</a></li>
             </ul>
             <div class="auth-group">
                 <span class="iconfont icon-user-copy"></span>

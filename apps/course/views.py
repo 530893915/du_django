@@ -77,8 +77,6 @@ def order_key(request):
     uid = '49dc532695baa99e16e01bc0'
 
     key = md5((goodsname + istype + notify_url + orderid + orderuid + price + return_url + token + uid).encode("utf-8")).hexdigest()
-    # key = md5("".join([goodsname, istype, notify_url, orderuid, orderuid, price, return_url, token, uid]).encode(
-    #     "utf-8")).hexdigest()
     return restful.result(data={'key': key})
 
 

@@ -6,6 +6,7 @@ from  utils import restful
 from .serializers import NewsSerializer,CommentSerilizer
 from .forms import AddCommentForm
 from apps.duauth.decorators import du_login_required
+from django.db.models import Q
 
 def index(request):
     newses = News.objects.select_related('category','author')[
@@ -62,4 +63,12 @@ def add_comment(request):
 
 
 def search(request):
-    return render(request,'news/search.html')
+    q = request.GET.get('q')
+    if q:
+        newses = News.objects.filter(Q(title__icontains=q)|Q(content__icontains=q))
+        context = {
+            'newses': newses
+        }
+    else:
+        context = {}
+    return render(request,'news/search.html',context=context)
