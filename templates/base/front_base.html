@@ -19,6 +19,7 @@
     <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>　
     <script src="{% static 'js/duajax.js' %}"></script>
     <script src="{% static 'js/layer/layer.js' %}"></script>
+    <script src="{% static 'js/front_base.js' %}"></script>
     {% block head %}{% endblock %}
 
 
@@ -34,10 +35,10 @@
             <a href="{% url 'news:index' %}"><h1 class="logo-box"></h1></a>
 
             <ul class="menu">
-                <li><a href="/" class="active">笔记</a></li>
-                <li><a href="{% url 'course:index' %}" class="active">视频</a></li>
-                <li><a href="{% url 'payinfo:index' %}" class="active">私密笔记</a></li>
-                <li><a href="{% url 'news:search' %}" class="active">搜索</a></li>
+                <li><a href="/">笔记</a></li>
+                <li><a href="{% url 'course:index' %}">视频</a></li>
+                <li><a href="{% url 'payinfo:index' %}">私密笔记</a></li>
+                <li><a href="{% url 'news:search' %}">搜索</a></li>
             </ul>
             <div class="auth-group">
                 <span class="iconfont icon-user-copy"></span>

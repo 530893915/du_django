@@ -120,7 +120,7 @@ a:active{text-decoration:none!important;}/* 指正在点的链接*/
 }
 
 .nav .menu li a:hover{
-    color: #ff8128;
+    color: rgba(148, 159, 255, 0.72);
     text-shadow: rgba(0, 0, 0, 0.69) 0 0 10px 10px;
     font-weight:bold;
 }
@@ -132,9 +132,9 @@ a:active{text-decoration:none!important;}/* 指正在点的链接*/
     overflow: hidden;
 }
 
-/*.menu li.active{*/
-    /*border-bottom:5px solid rgba(199, 217, 255, 0.6);*/
-/*}*/
+.menu li.active{
+    border-bottom:5px solid rgb(148, 159, 255);
+}
 
 .auth-group{
     float: right;
