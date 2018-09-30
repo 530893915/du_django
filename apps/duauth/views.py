@@ -67,7 +67,7 @@ class RegisterView(View):
             # 先验证数据是否是合法的
             telephone = form.cleaned_data.get('telephone')
             username = form.cleaned_data.get('username')
-            password = form.cleaned_data.get('password')
+            password = form.cleaned_data.get('password1')
             user = User.objects.create_user(telephone=telephone,username=username,password=password)
             login(request,user)
             return restful.ok()

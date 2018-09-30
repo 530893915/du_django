@@ -8,17 +8,19 @@ from .forms import EditNewsCategoryForm,WriteNewsForm,AddBannerForm,EditBannerFo
 from django.conf import settings
 import os
 import qiniu
-from django.contrib.auth.decorators import login_required
+from django.contrib.auth.decorators import login_required,permission_required
 from django.utils.decorators import method_decorator
 from django.core.paginator import Paginator
 from datetime import datetime
 from urllib import parse
+from apps.duauth.decorators import du_permission_required
 
 @staff_member_required(login_url='/')
 def index(request):
     return render(request,'cms/index.html')
 
 # 新闻列表管理页面
+@method_decorator([du_permission_required(News)],name='dispatch')
 class NewsList(View):
     def get(self,request):
         page = int(request.GET.get('p',1))
@@ -98,7 +100,7 @@ class NewsList(View):
 
 
 # 发布新闻
-@method_decorator(login_required(login_url='/account/login/'),name='dispatch')
+@method_decorator([login_required(login_url='/account/login/'),du_permission_required(News)],name='dispatch')
 class WriteNewsView(View):
     def get(self,request):
         context = {
@@ -120,6 +122,7 @@ class WriteNewsView(View):
         else:
             return restful.params_error(message=form.get_error())
 
+@method_decorator([login_required(login_url='/account/login/'),du_permission_required(News)],name='dispatch')
 class EditNewsView(View):
     def get(self,request):
         pk = request.GET.get('pk')
@@ -145,12 +148,14 @@ class EditNewsView(View):
         else:
             return restful.params_error(message=form.get_error())
 
+@du_permission_required(News)
 def delete_news(request):
     pk = request.POST.get('pk')
     News.objects.filter(pk=pk).delete()
     return restful.ok()
 
 # 新闻分类
+@du_permission_required(NewsCategory)
 def news_category(request):
     categories = NewsCategory.objects.order_by('-id')
     context = {
@@ -160,6 +165,7 @@ def news_category(request):
 
 # 添加分类
 @require_POST
+@du_permission_required(NewsCategory)
 def add_news_category(request):
     name = request.POST.get('name')
     exists = NewsCategory.objects.filter(name=name).exists()
@@ -171,6 +177,7 @@ def add_news_category(request):
 
 # 修改分类
 @require_POST
+@du_permission_required(NewsCategory)
 def edit_news_category(request):
     form = EditNewsCategoryForm(request.POST)
     if form.is_valid():
@@ -187,6 +194,7 @@ def edit_news_category(request):
 
 # 删除分类
 @require_POST
+@du_permission_required(NewsCategory)
 def delete_news_category(request):
     pk = request.POST.get('pk')
     try:
@@ -197,6 +205,7 @@ def delete_news_category(request):
 
 # 发布新闻-七牛云上传文件
 @require_GET
+@staff_member_required(login_url='/')
 def qntoken(request):
     access_key = 'SXJAGOM6nPxMAInwr3y5yy8cuGdQeIHIKsyMsvqt'
     secret_key = 'uoYTDGLeAbrzEcQRhuRyYhB_In8RF2ageTqE7QK4'
@@ -206,20 +215,24 @@ def qntoken(request):
     return restful.result(data={'token':token})
 
 # 轮播图
+@du_permission_required(Banner)
 def banners(request):
     return render(request,'cms/banners.html')
 
+@du_permission_required(Banner)
 def banner_list(request):
     banners = list(Banner.objects.all().values())
     return restful.result(data={"banners":banners})
 
 # 删除轮播图
+@du_permission_required(Banner)
 def delete_banner(request):
     banner_id = request.POST.get('banner_id')
     banner = Banner.objects.filter(pk=banner_id).delete()
     return restful.ok()
 
 # 编辑轮播图
+@du_permission_required(Banner)
 def edit_banner(request):
     form = EditBannerForm(request.POST)
     if form.is_valid():
@@ -236,6 +249,7 @@ def edit_banner(request):
 
 
 # 上传轮播图
+@du_permission_required(Banner)
 def add_banner(request):
     form = AddBannerForm(request.POST)
     if form.is_valid():
@@ -251,6 +265,7 @@ def add_banner(request):
 
 # 上传文件到自己的服务器
 @require_POST
+@staff_member_required(login_url='/')
 def upload_file(request):
     file = request.FILES.get('upfile')
     if not file:

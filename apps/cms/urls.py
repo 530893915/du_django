@@ -2,6 +2,7 @@
 
 from django.urls import path
 from . import views,course_views
+from . import staff_views
 
 app_name = 'cms'
 
@@ -28,4 +29,10 @@ urlpatterns = [
 # 视频
 urlpatterns += [
     path('pub_course/',course_views.PubCourse.as_view(),name='pub_course'),
+]
+
+# 用户权限管理
+urlpatterns += [
+    path('staffs/', staff_views.staffs, name='staffs'),
+    path('add_staff/', staff_views.AddStaffView.as_view(), name='add_staff'),
 ]

@@ -6,6 +6,9 @@ from utils import restful
 from hashlib import md5
 from django.shortcuts import reverse,redirect
 from django.views.decorators.csrf import csrf_exempt
+from apps.duauth.decorators import du_permission_required
+from django.utils.decorators import method_decorator
+
 
 def course_index(request):
     context = {

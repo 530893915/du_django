@@ -13,7 +13,7 @@ $(function () {
         ,btn: ['好的~','溜了溜了...']
         ,btnAlign: 'c'
         ,moveType: 1 //拖拽模式，0或者1
-        ,content: '<div style="padding: 50px; line-height: 22px; background-color: #283b3c; color: #fff; font-weight: 300;">嗨！<br><br>这里是DUDU的个人网站，用于学习笔记的整理。<br><br>欢迎你随便逛逛！O(∩_∩)O<br></div>'
+        ,content: '<div style="padding: 50px; line-height: 22px; background-color: #283b3c; color: #fff; font-weight: 300;">嗨！<br><br>这里是DUDU的个人网站，用于学习笔记的整理。<br><br>欢迎！O(∩_∩)O<br></div>'
         ,success: function(){
 
         }
