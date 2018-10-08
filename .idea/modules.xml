@@ -4,8 +4,10 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/../../100天/.idea/100天.iml" filepath="$PROJECT_DIR$/../../100天/.idea/100天.iml" />
       <module fileurl="file://$PROJECT_DIR$/../../FLASK/DU_bbs/.idea/DU_bbs.iml" filepath="$PROJECT_DIR$/../../FLASK/DU_bbs/.idea/DU_bbs.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../Python爬虫/.idea/Python爬虫.iml" filepath="$PROJECT_DIR$/../../Python爬虫/.idea/Python爬虫.iml" />
       <module fileurl="file://E:\My_Code\Django\blog_loginTest\.idea\blog_loginTest.iml" filepath="E:\My_Code\Django\blog_loginTest\.idea\blog_loginTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/du_django.iml" filepath="$PROJECT_DIR$/.idea/du_django.iml" />
+      <module fileurl="file://D:/wx_projects_git/wx_shopping/.idea/wx_shopping.iml" filepath="D:/wx_projects_git/wx_shopping/.idea/wx_shopping.iml" />
       <module fileurl="file://$PROJECT_DIR$/../../算法数据结构/.idea/算法数据结构.iml" filepath="$PROJECT_DIR$/../../算法数据结构/.idea/算法数据结构.iml" />
     </modules>
   </component>
