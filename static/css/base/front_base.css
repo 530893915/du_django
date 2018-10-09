@@ -20,7 +20,7 @@ a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, bo
 }
 
 canvas{
-    background-color: #e2d0be;
+    background-color: #f6f6f6;
     display: block;
     margin: 0 auto;
     position: fixed;
@@ -81,7 +81,6 @@ a:active{text-decoration:none!important;}/* 指正在点的链接*/
     position: fixed;
     z-index: 95;
     top:0;
-
 }
 
 .nav{

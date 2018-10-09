@@ -40,19 +40,14 @@
                             {{ news.content|safe }}
                         </article>
                     <div class="comment-group">
-                        <h2 class="comment-title">文章评论({{ news.comments.all|length }})</h2>
+                        <h2 class="comment-title">文章评论({{ comments|length }})</h2>
                         <textarea id="comment-textarea" placeholder="请填写评论" cols="30" rows="10" class="comment-textarea logined-textarea"></textarea>
-{#                        {% if user.is_authenticated %}#}
-{#                            <textarea id="comment-textarea" placeholder="请填写评论" cols="30" rows="10" class="comment-textarea logined-textarea"></textarea>#}
-{#                        {% else %}#}
-{#                            <textarea readonly placeholder="立即登录，参与评论~" cols="30" rows="10" class="comment-textarea nologin-textarea"></textarea>#}
-{#                        {% endif %}#}
                         <div class="submit-comment-group">
                             <button class="submit-comment-btn" id="submit-comment-btn" data-news-id="{{ news.id }}">评论</button>
                         </div>
                     </div>
                     <ul class="comment-list-group">
-                        {% for comment in news.comments.all %}
+                        {% for comment in comments %}
                             <li>
                                 <div class="top-info-group">
                                     <div class="user-info-group">
