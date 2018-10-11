@@ -24,13 +24,12 @@ def course_detail(request,course_id):
     }
     return render(request,'course/course_detail.html',context=context)
 
-
 def course_token(request):
     video_url = request.GET.get('video_url')
 
     course_id = request.GET.get('course_id')
 
-    buyed = CourseOrder.objects.filter(course_id=course_id,buyer=request.user,status=2)
+    buyed = CourseOrder.objects.filter(course=course_id,buyer=request.user,status=2).exists()
 
     if not buyed:
         return restful.params_error(message='您还没有权限观看！')
