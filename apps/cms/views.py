@@ -14,6 +14,7 @@ from django.core.paginator import Paginator
 from datetime import datetime
 from urllib import parse
 from apps.duauth.decorators import du_permission_required
+import time
 
 @staff_member_required(login_url='/')
 def index(request):
@@ -32,10 +33,22 @@ class NewsList(View):
 
         newses = News.objects.select_related('category','author')
 
-        if start and end:
-            start_date = datetime.strptime(start,'%Y/%m/%d')
-            end_date = datetime.strptime(end,'%Y/%m/%d')
-            newses = newses.filter(pub_time__range=(start_date,end_date))
+        # 当前日期
+        today = time.strftime('%Y/%m/%d',time.localtime(time.time()))
+
+        # 设定默认时间
+        if start is None:
+            start = '2018/09/01'
+        if end is None:
+            end = today
+
+        # if start and end:
+        start_date = datetime.strptime(start,'%Y/%m/%d')
+        end_date = datetime.strptime(end,'%Y/%m/%d')
+        newses = newses.filter(pub_time__range=(start_date,end_date))
+
+        if title is None:
+            title = ''
         if title:
             newses = newses.filter(title__icontains=title)
 
