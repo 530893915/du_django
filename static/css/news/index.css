@@ -40,11 +40,9 @@
 
 .list-outer-group{
     margin-top:20px;
-    background: #fff;
+    background: #e9ffe9;
     height: 66px;
-    border: 1px solid #eee;
-    border-left:none;
-    border-right:none;
+    border: none;
     overflow: hidden;
     box-shadow: 0 2px 13px 5px rgba(0, 0, 0, 0.02);
 }
@@ -65,23 +63,24 @@
 }
 
 .list-tab-group li a{
-    color: #878787;
+    color: #282828;
     transition: all 0.25s ease;
 }
 
 .list-tab-group li.active1 a{
-    color: #000;
+    color: #ffffff;
     font-size: 25px;
+    text-shadow: #2d2d2d 0 0 5px;
 }
 
 .list-tab-group li:hover{
-    background: rgb(0, 0, 0);
+    background: rgb(255, 255, 255);
     border:none;
     box-shadow: 0 2px 13px 5px rgba(0, 0, 0, 0.02);
 }
 
 .list-tab-group li:hover a{
-    color: #fff;
+    color: #000000;
     font-size: 30px;
 }
 
