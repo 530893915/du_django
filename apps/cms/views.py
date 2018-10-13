@@ -171,8 +171,10 @@ def delete_news(request):
 @du_permission_required(NewsCategory)
 def news_category(request):
     categories = NewsCategory.objects.order_by('-id')
+    newses = News.objects.select_related('category').all()
     context = {
-        'categories':categories
+        'categories':categories,
+        'newses': newses
     }
     return render(request,'cms/news_category.html',context=context)
 

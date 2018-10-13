@@ -19,6 +19,7 @@
     <orderEntry type="module" module-name="100天" />
     <orderEntry type="module" module-name="wx_shopping" />
     <orderEntry type="module" module-name="Python爬虫" />
+    <orderEntry type="module" module-name="ProxyPool-master" />
   </component>
   <component name="TemplatesService">
     <option name="TEMPLATE_CONFIGURATION" value="Django" />

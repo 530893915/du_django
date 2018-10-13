@@ -1,5 +1,29 @@
 {% extends 'cms/base.html' %}
 
+{% block title %}
+    CMS后台管理系统首页
+{% endblock %}
+
+{% block head %}
+    <style>
+        .jumbotron{
+            text-align: center;
+        }
+    </style>
+{% endblock %}
+
 {% block content-header %}
     <h1>CMS后台管理系统首页</h1>
+{% endblock %}
+
+
+{% block content %}
+    <div class="jumbotron">
+        <h1>嗨, {{ user.username }}!</h1>
+        <p>欢迎进入DUDU新闻后台管理系统!</p>
+        <p>
+            <a class="btn btn-danger btn-lg" href="{% url 'cms:write_news' %}" role="button">发布新闻？</a>
+            <a class="btn btn-primary btn-lg" href="{% url 'news:index' %}" role="button">回到主页</a>
+        </p>
+    </div>
 {% endblock %}
