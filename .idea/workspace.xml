@@ -17,13 +17,7 @@
       <change type="MODIFICATION" beforePath="D:/wx_projects_git/wx_shopping/project.config.json" afterPath="D:/wx_projects_git/wx_shopping/project.config.json" />
       <change type="MODIFICATION" beforePath="D:/wx_projects_git/wx_shopping/server/config.js" afterPath="D:/wx_projects_git/wx_shopping/server/config.js" />
       <change type="MODIFICATION" beforePath="D:/wx_projects_git/wx_shopping/server/routes/index.js" afterPath="D:/wx_projects_git/wx_shopping/server/routes/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/cms/staff_views.py" afterPath="$PROJECT_DIR$/apps/cms/staff_views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/cms/views.py" afterPath="$PROJECT_DIR$/apps/cms/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/duauth/views.py" afterPath="$PROJECT_DIR$/apps/duauth/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/sweetalert/xfzalert.js" afterPath="$PROJECT_DIR$/static/sweetalert/xfzalert.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/base/front_base.html" afterPath="$PROJECT_DIR$/templates/base/front_base.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/cms/staffs.html" afterPath="$PROJECT_DIR$/templates/cms/staffs.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/css/news/index.css" afterPath="$PROJECT_DIR$/static/css/news/index.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../算法数据结构/11111.py" afterPath="$PROJECT_DIR$/../../算法数据结构/11111.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -90,11 +84,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/static/css/news/index.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="621">
-              <caret line="27" column="1" lean-forward="false" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
+            <state relative-caret-position="267">
+              <caret line="172" column="17" lean-forward="false" selection-start-line="172" selection-start-column="17" selection-end-line="172" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -112,7 +106,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="front_base.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="front_base.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/base/front_base.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="184">
@@ -211,7 +205,6 @@
         <option value="$PROJECT_DIR$/../../Python爬虫/使用代理处理反爬抓取微信文章/config.py" />
         <option value="$PROJECT_DIR$/../../Python爬虫/使用代理处理反爬抓取微信文章/WeixinArticles.py" />
         <option value="$PROJECT_DIR$/templates/news/index.html" />
-        <option value="$PROJECT_DIR$/static/css/news/index.css" />
         <option value="$PROJECT_DIR$/templates/payinfo/payinfo.html" />
         <option value="$PROJECT_DIR$/apps/duauth/views.py" />
         <option value="$PROJECT_DIR$/apps/cms/views.py" />
@@ -255,6 +248,7 @@
         <option value="$PROJECT_DIR$/../../算法数据结构/链表/反转链表(插入).py" />
         <option value="$PROJECT_DIR$/../../算法数据结构/11111.py" />
         <option value="$PROJECT_DIR$/templates/base/front_base.html" />
+        <option value="$PROJECT_DIR$/static/css/news/index.css" />
       </list>
     </option>
   </component>
@@ -386,7 +380,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
+              <option name="myItemId" value="static" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -400,11 +394,33 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
+              <option name="myItemId" value="static" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="base" />
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="du_django" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="du_django" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="news" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1205,14 +1221,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/css/news/index.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="621">
-          <caret line="27" column="1" lean-forward="false" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/apps/news/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -1227,6 +1235,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="184">
           <caret line="14" column="67" lean-forward="false" selection-start-line="14" selection-start-column="67" selection-end-line="14" selection-end-column="67" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/news/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="267">
+          <caret line="172" column="17" lean-forward="false" selection-start-line="172" selection-start-column="17" selection-end-line="172" selection-end-column="17" />
           <folding />
         </state>
       </provider>
