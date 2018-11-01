@@ -167,5 +167,5 @@ var xfzalert = {
     // 关闭当前对话框
     'close': function () {
         swal.close();
-    }
+    },
 };

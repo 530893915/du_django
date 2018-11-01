@@ -135,6 +135,7 @@ class WriteNewsView(View):
         else:
             return restful.params_error(message=form.get_error())
 
+# 编辑新闻
 @method_decorator([login_required(login_url='/account/login/'),du_permission_required(News)],name='dispatch')
 class EditNewsView(View):
     def get(self,request):
@@ -161,6 +162,7 @@ class EditNewsView(View):
         else:
             return restful.params_error(message=form.get_error())
 
+# 删除新闻
 @du_permission_required(News)
 def delete_news(request):
     pk = request.POST.get('pk')

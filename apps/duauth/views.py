@@ -101,5 +101,5 @@ def sms_captcha(request):
     request.session['sms_captcha'] = code
 
     result = aliyun.send_sms(telephone,code=code)
-    # print(code)
+    print(code)
     return HttpResponse('success')

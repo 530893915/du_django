@@ -1,5 +1,7 @@
 #coding:utf8
 from django.shortcuts import render
+from django.views.decorators.http import require_POST
+
 from apps.duauth.models import User
 from django.db.models import Q
 from django.views.generic import View
@@ -15,6 +17,7 @@ def staffs(request):
     }
     return render(request,'cms/staffs.html',context=context)
 
+# 新增用户权限
 @method_decorator(du_superuser_required,name='dispatch')
 class AddStaffView(View):
     def get(self,request):
@@ -32,3 +35,9 @@ class AddStaffView(View):
         user.groups.set(groups)
         user.save()
         return redirect(reverse("cms:staffs"))
+
+# 编辑用户权限
+# @require_POST
+# @method_decorator(du_superuser_required,name='dispatch')
+# def edit_staff(request):
+#     pass
