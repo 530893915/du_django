@@ -210,9 +210,14 @@ a:active{text-decoration:none!important;}/* 指正在点的链接*/
 .main .sidebar-container{
     float: right;
     width: 355px;
-    background: #ffffff;
+    background: rgba(255, 255, 255, 0.7);
     height: 690px;
     box-shadow: 0 2px 13px 5px rgba(0, 0, 0, 0.02);
+    transition: all 0.5s ease;
+}
+
+.main .sidebar-container:hover{
+    background: #ffffff;
 }
 
 .aabcc{
