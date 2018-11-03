@@ -27,6 +27,9 @@
     <script src="{% static 'js/front_base.js' %}"></script>
     {% block head %}{% endblock %}
 
+    <link rel="stylesheet" type="text/css" href="{% static 'live2D/waifu.css' %}"/>
+    <!-- href后面填写的路径对应你live2D文件夹放置的位置 -->
+
 
 </head>
 <body>
@@ -67,6 +70,26 @@
     {% block main %}
 
     {% endblock %}
+
+    <div class="waifu">
+        <div class="waifu-tips"></div>
+        <canvas id="live2d" width="280" height="250" class="live2d"></canvas>
+        <div class="waifu-tool">
+            <span class="fui-home"></span>
+            <span class="fui-chat"></span>
+            <span class="fui-eye"></span>
+            <span class="fui-user"></span>
+            <span class="fui-photo"></span>
+            <span class="fui-info-circle"></span>
+            <span class="fui-cross"></span>
+        </div>
+    </div>
+
+    <script src="{% static 'live2D/waifu-tips.js' %}"></script>
+    <script src="{% static 'live2D/live2d.js' %}"></script>
+    <script type="text/javascript">initModel("/static/live2D")</script>
+    <!-- src、initModel两个属性后面填写的路径对应你live2D文件夹放置的位置 -->
+
     <footer class="footer">
         <div class="footer-1">
             <div class="footer-inner">

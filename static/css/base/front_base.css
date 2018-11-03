@@ -19,7 +19,7 @@ a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, bo
     filter: blur(7px);
 }
 
-canvas{
+#canvas{
     background-color: #f6f6f6;
     display: block;
     margin: 0 auto;
