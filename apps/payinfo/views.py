@@ -5,6 +5,7 @@ from django.views.decorators.csrf import csrf_exempt
 from utils import restful
 from hashlib import md5
 from django.http import FileResponse
+from apps.duauth.decorators import du_login_required
 from django.conf import settings
 import os
 
@@ -15,6 +16,7 @@ def index(request):
     }
     return render(request,'payinfo/payinfo.html',context=context)
 
+@du_login_required
 def payinfo_order(request):
     payinfo_id = request.GET.get('payinfo_id')
     payinfo = Payinfo.objects.get(pk=payinfo_id)

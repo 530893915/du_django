@@ -14,7 +14,7 @@ def du_login_required(func):
             if request.is_ajax():
                 return restful.unauth(message='请先登录！')
             else:
-                return redirect('/')
+                return redirect('/account/login/')
     return wrapper
 
 def du_permission_required(model):

@@ -6,7 +6,7 @@ from utils import restful
 from hashlib import md5
 from django.shortcuts import reverse,redirect
 from django.views.decorators.csrf import csrf_exempt
-from apps.duauth.decorators import du_permission_required
+from apps.duauth.decorators import du_permission_required,du_login_required
 from django.utils.decorators import method_decorator
 
 
@@ -16,6 +16,7 @@ def course_index(request):
     }
     return render(request,'course/course_index.html',context=context)
 
+@du_login_required
 def course_detail(request,course_id):
     course = Course.objects.get(pk=course_id)
     context = {

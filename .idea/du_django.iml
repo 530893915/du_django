@@ -12,7 +12,7 @@
   </component>
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$" />
-    <orderEntry type="inheritedJdk" />
+    <orderEntry type="jdk" jdkName="Python 3.5.2 (D:\python\python.exe)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="DU_bbs" />
     <orderEntry type="module" module-name="算法数据结构" />
@@ -20,6 +20,7 @@
     <orderEntry type="module" module-name="wx_shopping" />
     <orderEntry type="module" module-name="Python爬虫" />
     <orderEntry type="module" module-name="ProxyPool-master" />
+    <orderEntry type="module" module-name="blog" />
   </component>
   <component name="TemplatesService">
     <option name="TEMPLATE_CONFIGURATION" value="Django" />

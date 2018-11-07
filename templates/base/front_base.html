@@ -27,6 +27,7 @@
     <script src="{% static 'js/front_base.js' %}"></script>
     {% block head %}{% endblock %}
 
+
     <link rel="stylesheet" type="text/css" href="{% static 'live2D/waifu.css' %}"/>
     <!-- href后面填写的路径对应你live2D文件夹放置的位置 -->
 
@@ -87,7 +88,7 @@
 
     <script src="{% static 'live2D/waifu-tips.js' %}"></script>
     <script src="{% static 'live2D/live2d.js' %}"></script>
-    <script type="text/javascript">initModel("/static/live2D")</script>
+    <script type="text/javascript">initModel("static/live2D/")</script>
     <!-- src、initModel两个属性后面填写的路径对应你live2D文件夹放置的位置 -->
 
     <footer class="footer">
